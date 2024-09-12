@@ -1,0 +1,16 @@
+
+body{
+    background-color: rgb(236, 193, 136);
+}
+#menu{
+    background-color: rgb(226, 180, 121);
+    
+}
+
+
+.item{
+    margin-right: 8rem;
+}
+.items{
+    margin-left: 2rem;
+}
