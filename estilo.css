@@ -1,12 +1,45 @@
 
 body{
-    background-color: rgb(236, 193, 136);
+    background-color: rgb(253, 253, 253);
 }
 #menu{
-    background-color: rgb(226, 180, 121);
+    background-color: rgb(202, 245, 185);
     
 }
 
+.logo{
+    width:100px;
+    border-radius: 70px;
+    border: solid 1px black;
+   
+}
+.tar{
+    color:black;
+    width:350px;
+    font-size: 20px;
+    
+   
+}
+
+.tra2{
+    border: solid 2px rgb(26, 25, 25);
+    
+   
+}
+
+.tra2:hover{
+    box-shadow: 3px 3px 3px rgb(95, 95, 95);
+}
+
+.joya{
+    height:320px;
+    
+    
+}
+
+.aro{
+    height: 320px
+}
 
 .item{
     margin-right: 8rem;
