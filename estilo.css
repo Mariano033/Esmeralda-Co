@@ -3,14 +3,14 @@ body{
     background-color: rgb(253, 253, 253);
 }
 #menu{
-    background-color: rgb(202, 245, 185);
+    background-color: rgb(186, 255, 200);
     
 }
 
 .logo{
     width:100px;
-    border-radius: 70px;
-    border: solid 1px black;
+    border-radius: 60px;
+    border: solid 1px rgb(91, 153, 105);
    
 }
 .tar{
@@ -46,4 +46,32 @@ body{
 }
 .items{
     margin-left: 2rem;
+}
+.pie{
+    margin-left:490px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+.iwsp{
+    color: rgb(10, 167, 10);
+    width: 1rem;
+    
+}
+
+.numero{
+    color: white;
+    text-decoration: none;
+    margin-left:8px;
+    
+}
+
+.numero:hover{
+    color:rgb(10, 167, 10);
+}
+
+.c{
+    text-align: center;
+    margin-left: 600px;
+    
 }
