@@ -48,7 +48,9 @@ body{
     margin-left: 2rem;
 }
 
-
+.section{
+    text-align: center;
+}
 
 .iwsp{
     color: rgb(10, 167, 10);
