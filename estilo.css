@@ -48,16 +48,20 @@ body{
     margin-left: 2rem;
 }
 
-/*
+
 .pie{
-    margin-left:490px;
-    margin-top: 30px;
+    margin-left:520px;
+    border-left: solid 1px white;
+   /* margin-top: 30px;
     margin-bottom: 50px;
-    font-size: 20px;
+    font-size: 20px;*/
 }
+    
 .iwsp{
     color: rgb(10, 167, 10);
     width: 1rem;
+    margin-left: 15px;
+    
     
 }
 
@@ -72,9 +76,10 @@ body{
     color:rgb(10, 167, 10);
 }
 
+
+
 .c{
     text-align: center;
     margin-left: 600px;
     
 }
-    */
