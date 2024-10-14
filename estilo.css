@@ -18,10 +18,26 @@ section{
 
      display: flex;
      flex-wrap: wrap;
-   flex-direction: row;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 15px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(186, 255, 200);
+    width: 1346px;
+    margin-left: -120px;
+    
+}
+
+.botonfil{
+    margin-left: 160px;
+
 }
 .tar{
     color:black;
