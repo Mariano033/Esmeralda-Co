@@ -12,7 +12,11 @@ body{
     border-radius: 60px;
       
 }
-
+.titulop{
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
 section{
 
      display: flex;
@@ -42,7 +46,7 @@ section{
     color:black;
     border: solid 1px rgb(195, 196, 195);
     border-radius: 3%;
-    width:170px;
+    width:240px;
     font-size: 16px; 
      
 }
@@ -51,7 +55,7 @@ section{
 
 
 .joya{
-    width:168px;        
+    width:238px;        
 }
 
 
