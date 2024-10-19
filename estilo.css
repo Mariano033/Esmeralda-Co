@@ -44,9 +44,9 @@ section{
 }
 .tar{
     color:black;
-    border: solid 1px rgb(195, 196, 195);
+    border: solid 1px  rgb(186, 255, 200);
     border-radius: 3%;
-    width:240px;
+    width:200px;
     font-size: 16px; 
      
 }
@@ -55,7 +55,7 @@ section{
 
 
 .joya{
-    width:238px;        
+    width:199px;        
 }
 
 
@@ -74,7 +74,7 @@ section{
 .iwsp{
     color: rgb(10, 167, 10);
     width: 1rem;
-    margin-left: 15px;
+    margin-left:50px;
     
     
 }
@@ -82,12 +82,13 @@ section{
 .numero{
     color: white;
     text-decoration: none;
-    margin-left:8px;
+    margin-left:1px;
+    
     
 }
 
 .numero:hover{
-    color:rgb(10, 167, 10);
+    color: rgb(121, 240, 145);
 }
 
 
@@ -112,4 +113,20 @@ section{
 
 }
 
+h2{
+    
+    color: rgb(105, 104, 104);
+    margin-top: 20px;
+}
+h3{
+    font-size: 20px;
+    color: gray;
+    margin-top: 20px;
+    
+}
+.parrafo6{
+    color: gray;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
 
