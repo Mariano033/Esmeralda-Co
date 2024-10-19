@@ -19,12 +19,12 @@ body{
 }
 section{
 
-     display: flex;
+      display: flex;
      flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     gap: 40px;
 }
 
 .formulario{
