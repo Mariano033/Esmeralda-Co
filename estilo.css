@@ -47,7 +47,7 @@ section{
     border: solid 1px  rgb(186, 255, 200);
     border-radius: 3%;
     width: 230px;
-    font-size: 16px; 
+    font-size: 20px; 
      
 }
 
@@ -114,12 +114,12 @@ section{
 }
 
 h2{
-    
+    font-size: 30px;
     color: rgb(105, 104, 104);
     margin-top: 20px;
 }
 h3{
-    font-size: 20px;
+    font-size: 30px;
     color: gray;
     margin-top: 20px;
     
