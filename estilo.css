@@ -59,9 +59,13 @@ section{
 
 
 .joya{
-    width:149px;        
+    width:149px;  
+    transition: transform 0.3s ease;      
 }
 
+.tar:hover .joya{
+    transform: scale(1.5);
+}
 
 
 .item{
