@@ -45,13 +45,15 @@ section{
 }
 .tar{
     color:black;
-    border: solid 1px  rgb(186, 255, 200);
+    border: solid 1px rgb(192, 191, 191);
     border-radius: 3%;
     width: 150px;
     font-size: 20px; 
    
      
 }
+
+
 
 
 
