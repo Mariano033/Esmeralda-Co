@@ -5,6 +5,7 @@ body{
 #menu{
     background-color: rgb(186, 255, 200);
     
+    
 }
 
 .logo{
@@ -17,6 +18,21 @@ body{
     margin-bottom: 20px;
     width: 100%;
 }
+.header1{
+    background-color: rgb(245, 243, 243);
+    margin-top: 90px;
+    overflow: hidden;
+    width: 100%;
+    
+
+    
+}
+.imagen1{
+   
+    max-width: 100%;
+    height: auto;
+    
+}
 section{
 
       display: flex;
@@ -25,6 +41,7 @@ section{
      justify-content: center;
      align-items: center;
      gap: 40px;
+     
 }
 
 .formulario{
