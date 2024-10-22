@@ -4,7 +4,7 @@ body{
 }
 #menu{
     background-color: rgb(186, 255, 200);
-    margin-bottom: 60px;
+    margin-bottom: 190px;
     
     
 }
@@ -30,10 +30,14 @@ body{
     
 }
 .imagen1{
-   
+    margin-top:40px;
     max-width: 100%;
     height: auto;
     
+}
+
+h2{
+    color: grey;
 }
 section{
 
