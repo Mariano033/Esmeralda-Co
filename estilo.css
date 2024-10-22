@@ -4,7 +4,7 @@ body{
 }
 #menu{
     background-color: rgb(186, 255, 200);
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     
     
 }
@@ -22,7 +22,7 @@ body{
 }
 .header1{
     background-color: rgb(245, 243, 243);
-     padding-top: 60px;
+    padding-top: 60px;
     overflow: hidden;
     width: 100%;
     
