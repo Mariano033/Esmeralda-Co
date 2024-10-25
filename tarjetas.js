@@ -19,11 +19,13 @@ function createProductCards(filter = "") {
   contentHtml = ""; // Reiniciar el contenido HTML
 
   // Agregar título dinámico
-  contentHtml += `<h2 class="text-center">Joyas de Plata 925</h2>`;
+  
 
   let found = false; // Variable para saber si se encontraron artículos
 
+  contentHtml += `<h2 class="text-center">Joyas de Plata 925</h2>`;
   for (let i = 0; i < names.length; i++) {
+    
       if (names[i].toLowerCase().includes(filter.toLowerCase())) {
           contentHtml += `
               <div class="card tar product" data-name="${names[i]}">
@@ -35,6 +37,7 @@ function createProductCards(filter = "") {
               </div>
           `;
           found = true; // Se encontraron artículos
+          
       }
   }
 
