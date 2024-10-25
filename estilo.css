@@ -1,136 +1,129 @@
-
-body{
+body {
     background-color: rgb(253, 253, 253);
 }
-#menu{
+
+#menu {
     background-color: rgb(186, 255, 200);
     margin-bottom: 190px;
-    
-    
 }
 
-.logo{
-    width:100px;
+.logo {
+    width: 100px;
     border-radius: 60px;
-      
 }
-.titulop{
+
+.titulop {
     color: rgb(116, 115, 115);
     text-align: center;
     margin-bottom: 20px;
     width: 100%;
 }
-.header1{
+
+.header1 {
     background-color: rgb(245, 243, 243);
     padding-top: 60px;
     overflow: hidden;
     width: 100%;
-    
-
-    
 }
-.imagen1{
-    margin-top:40px;
+
+.imagen1 {
+    margin-top: 40px;
     max-width: 100%;
     height: auto;
-    
 }
 
-h2{
-    
+h2 {
+    font-size: 20px;
+    margin-bottom: 80px;
     color: grey;
     margin-top: 40px;
 }
-
-
-section{
-     display: flex;
-     flex-wrap: wrap;
-     flex-direction: row;
-     justify-content: center;
-     align-items: center;
-     gap: 40px;
-     
+.buscador{
+   width: 500px;
+   margin-left: 320px;
+   margin-top: 40px;
+   background-color: rgb(186, 255, 200);
+   border: solid rgb(99, 99, 99) 1px;
+   font-style: italic;
+   font-weight: 700;
 }
-
-.formulario{
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px; /* Añadido para espaciado */
+}
+.aviso{
+    font-size: 20px;
+    color: rgb(175, 12, 12);
+}
+.formulario {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: rgb(186, 255, 200);
-    width: 1346px;
-    margin-left: -120px;
-   
-    
+    width: 100%; /* Cambiado a 100% para responsive */
+    max-width: 1346px; /* Limitar el ancho máximo */
 }
 
-.botonfil{
+.botonfil {
     margin-left: 160px;
-
 }
-.tar{
-    color:black;
+
+.tar {
+    color: black;
     border: solid 1px rgb(192, 191, 191);
     border-radius: 3%;
     width: 180px;
-    font-size: 20px; 
-    
-     
+    font-size: 20px;
 }
 
-
-
-.joya{
-    width: 178px;
-    transition: transform 0.3s ease;      
+.joya {
+    width: 100%; /* Asegurarse de que la imagen se ajuste al contenedor */
+    transition: transform 0.3s ease;
 }
 
-.tar:hover .joya{
-    transform: scale(1.5);
+.tar:hover .joya {
+    transform: scale(1.2); /* Cambié el tamaño de la transformación para que sea más sutil */
 }
 
-
-.item{
+.item {
     margin-right: 8rem;
 }
-.items{
+
+.items {
     margin-left: 2rem;
 }
 
-.section{
+.section {
     text-align: center;
 }
 
-.iwsp{
+.iwsp {
     color: rgb(10, 167, 10);
     width: 1rem;
-    margin-left:13px;
-    
-    
+    margin-left: 13px;
 }
 
-.numero{
+.numero {
     color: white;
     text-decoration: none;
-    margin-left:2px;
-    
-    
+    margin-left: 2px;
 }
 
-.numero:hover{
+.numero:hover {
     color: rgb(121, 240, 145);
 }
 
-
-
-.c{
+.c {
     text-align: center;
     margin-left: 600px;
-    
 }
 
-.wspa{
+.wspa {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -141,9 +134,16 @@ section{
     border-radius: 50px;
     width: 55px;
     height: 52px;
-
 }
 
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .formulario {
+        margin-left: 0; /* Para móviles */
+        width: 100%; /* Asegurarse de que el formulario ocupe el ancho completo */
+    }
 
-
-
+    .tar {
+        width: 100%; /* Las tarjetas ocuparán el ancho completo en móviles */
+    }
+}
