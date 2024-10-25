@@ -38,15 +38,7 @@ h2 {
     color: grey;
     margin-top: 40px;
 }
-.buscador{
-   width: 500px;
-   margin-left: 320px;
-   margin-top: 40px;
-   background-color: rgb(186, 255, 200);
-   border: solid rgb(99, 99, 99) 1px;
-   font-style: italic;
-   font-weight: 700;
-}
+
 section {
     display: flex;
     flex-wrap: wrap;
@@ -60,13 +52,13 @@ section {
     color: rgb(175, 12, 12);
 }
 .formulario {
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(186, 255, 200);
     width: 100%; /* Cambiado a 100% para responsive */
-    max-width: 1346px; /* Limitar el ancho máximo */
+    max-width:600px; /* Limitar el ancho máximo */
 }
 
 .botonfil {
@@ -143,7 +135,5 @@ section {
         width: 100%; /* Asegurarse de que el formulario ocupe el ancho completo */
     }
 
-    .tar {
-        width: 100%; /* Las tarjetas ocuparán el ancho completo en móviles */
-    }
+    
 }
