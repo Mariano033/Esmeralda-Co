@@ -37,12 +37,14 @@ body{
 }
 
 h2{
+    
     color: grey;
     margin-top: 40px;
 }
-section{
 
-      display: flex;
+
+section{
+     display: flex;
      flex-wrap: wrap;
      flex-direction: row;
      justify-content: center;
@@ -71,19 +73,16 @@ section{
     color:black;
     border: solid 1px rgb(192, 191, 191);
     border-radius: 3%;
-    width: 150px;
+    width: 180px;
     font-size: 20px; 
-   
+    
      
 }
 
 
 
-
-
-
 .joya{
-    width:149px;  
+    width: 178px;
     transition: transform 0.3s ease;      
 }
 
