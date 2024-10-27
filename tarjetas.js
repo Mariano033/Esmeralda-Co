@@ -1,126 +1,95 @@
-const names = [
-    "Anillo de Plata", "Collar de Oro", "Pulsera de Cuero", "Anillo Full", "Anillos", "Anillo de Fuego", "Anillo de Plata"
-];
-const prices = [
-    5000, 7500, 3200, 8000, 9000, 10000, 8005
-];
-const images = [
-    "imagenes/anillo1plata.jpg", "imagenes/anillo2plata.jpg", "imagenes/anillo3plata.jpg"
-];
-
-const productContainer = document.getElementById("productContainer");
-const searchInput = document.getElementById("searchInput");
+// Arreglo para almacenar los productos en el carrito
 let cart = [];
-let totalAmount = 0; // Para mantener el total del carrito
+const cartSummary = document.getElementById('cartSummary');
+const totalAmountDisplay = document.getElementById('totalAmountDisplay');
+const cartIcon = document.getElementById('cartIcon');
 
-// Función para crear las tarjetas de productos
-function createProductCards(filter = "") {
-    let contentHtml = "";
+// Función para agregar un producto al carrito
+function addToCart(product) {
+    cart.push(product);
+    updateCart();
+}
 
-    
+// Actualiza el carrito
+function updateCart() {
+    // Limpiar el resumen del carrito
+    cartSummary.innerHTML = '';
+    let totalAmount = 0;
 
-    for (let i = 0; i < names.length; i++) {
-        if (names[i].toLowerCase().includes(filter.toLowerCase())) {
-            contentHtml += `
-            
-                <div class="card tar product" data-name="${names[i]}">
-                    <img src="${images[i % images.length]}" class="card-img-top joya" alt="${names[i]}">
-                    <div class="card-body tra2">
-                        <p class="card-text text-center">${names[i]}</p>
-                        <p class="card-text text-center">$${prices[i]}</p>
-                        <button class="btn btn-success add-to-cart" data-name="${names[i]}" data-price="${prices[i]}">Agregar al carrito</button>
-                    </div>
-                </div>
-            `;
-        }
-    }
-
-    productContainer.innerHTML = contentHtml;
-
-    // Agregar funcionalidad a los botones de "Agregar al carrito"
-    document.querySelectorAll(".add-to-cart").forEach(button => {
-        button.addEventListener("click", function () {
-            const productName = this.getAttribute("data-name");
-            const productPrice = parseFloat(this.getAttribute("data-price"));
-            addToCart(productName, productPrice);
-        });
+    cart.forEach((product, index) => {
+        const li = document.createElement('li');
+        li.textContent = `${product.name} - $${product.price}`;
+        li.innerHTML += ` <button onclick="removeFromCart(${index})">Eliminar</button>`;
+        cartSummary.appendChild(li);
+        totalAmount += product.price;
     });
+
+    totalAmountDisplay.textContent = totalAmount;
+    cartIcon.textContent = cart.length; // Actualizar el ícono del carrito
 }
 
-// Función para agregar productos al carrito
-function addToCart(productName, productPrice) {
-    const product = cart.find(item => item.name === productName);
-    if (product) {
-        product.quantity += 1;
-    } else {
-        cart.push({ name: productName, price: productPrice, quantity: 1 });
-    }
-
-    totalAmount += productPrice; // Sumar el precio al total
-    updateCartIcon();
+// Función para eliminar un producto del carrito
+function removeFromCart(index) {
+    cart.splice(index, 1); // Eliminar el producto del carrito
+    updateCart(); // Actualizar el carrito después de eliminar
 }
 
-// Función para actualizar el ícono del carrito
-function updateCartIcon() {
-    const cartIcon = document.getElementById("cartIcon");
-    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-    cartIcon.textContent = totalItems;
-}
-
-// Función para mostrar el resumen del carrito
+// Mostrar el resumen del carrito en el modal
 function showCartSummary() {
-    const cartSummary = document.getElementById("cartSummary");
-    const totalAmountDisplay = document.getElementById("totalAmountDisplay");
-    cartSummary.innerHTML = "";
-    
-    cart.forEach(item => {
-        const listItem = document.createElement("li");
-        listItem.innerHTML = `${item.name} - $${item.price} x ${item.quantity} 
-        <button class="btn btn-danger btn-sm" onclick="removeFromCart('${item.name}')">Eliminar</button>`;
-        cartSummary.appendChild(listItem);
-    });
-
-    totalAmountDisplay.textContent = totalAmount.toFixed(2); // Mostrar el total
-    const cartModal = new bootstrap.Modal(document.getElementById("cartModal"));
+    const cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
     cartModal.show();
 }
 
-// Función para eliminar productos del carrito
-function removeFromCart(productName) {
-    const productIndex = cart.findIndex(item => item.name === productName);
-    if (productIndex !== -1) {
-        totalAmount -= cart[productIndex].price * cart[productIndex].quantity; // Restar del total
-        cart.splice(productIndex, 1); // Eliminar producto del carrito
-    }
-    updateCartIcon();
-    showCartSummary();
-}
-
-// Función para finalizar la compra y compartir en WhatsApp
-function finalizePurchase() {
-    let message = "Resumen de tu compra:\n";
-    cart.forEach(item => {
-        message += `${item.quantity}x ${item.name} - $${item.price}\n`;
-    });
-    message += `Total: $${totalAmount.toFixed(2)}\n`;
-    message += "Datos bancarios: [Eseralda2024.mp]";
-
-    const whatsappUrl = `https://wa.me/3518042065?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, "_blank");
-
-    // Reiniciar el carrito
+// Reiniciar el carrito al cerrar el modal
+function resetCart() {
     cart = [];
-    totalAmount = 0;
-    updateCartIcon();
-    const cartModal = bootstrap.Modal.getInstance(document.getElementById("cartModal"));
-    cartModal.hide();
+    updateCart();
 }
 
-// Filtrar productos en tiempo real
-searchInput.addEventListener("input", function () {
-    const filter = searchInput.value;
-    createProductCards(filter);
-});
+// Finalizar compra
+function finalizePurchase() {
+    if (cart.length === 0) {
+        alert("El carrito está vacío. Agrega productos antes de finalizar la compra.");
+        return;
+    }
 
-// Cargar los productos al cargar la página
-createProductCards();
+    const purchaseDetails = cart.map(product => `${product.name} - $${product.price}`).join('\n');
+    const totalAmount = cart.reduce((sum, product) => sum + product.price, 0);
+
+    const message = `Detalles de la compra:\n${purchaseDetails}\nTotal: $${totalAmount}`;
+    const whatsappLink = `https://wa.me/?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappLink, '_blank'); // Abrir WhatsApp con los detalles
+    resetCart(); // Reiniciar el carrito después de finalizar la compra
+}
+
+// Crear productos de ejemplo y agregar al contenedor
+const products = [
+    { id: 1, name: 'Anillo de Plata', price: 100, },
+    { id: 2, name: 'Collar de Plata', price: 150 },
+    { id: 3, name: 'Pulsera de Plata', price: 80 },
+    { id: 4, name: 'Pendientes de Plata', price: 120 },
+    { id: 5, name: 'Anillo de Plata', price: 100, },
+    { id: 6, name: 'Collar de Plata', price: 150 },
+    { id: 7, name: 'Pulsera de Plata', price: 80 },
+    { id: 8, name: 'Pendientes de Plata', price: 120 }
+];
+
+// Agregar productos al contenedor
+const productContainer = document.getElementById('productContainer');
+products.forEach(product => {
+    const card = document.createElement('div');
+    card.classList.add('card', 'm-2', 'text-center');
+    card.style.width = '18rem';
+
+    card.innerHTML = `
+        <img src="./imagenes/producto${product.id}.jpg" class="card-img-top" alt="${product.name}">
+        <div class="card-body">
+            <h5 class="card-title">${product.name}</h5>
+            <p class="card-text">$${product.price}</p>
+            <button class="btn btn-success" onclick="addToCart({ name: '${product.name}', price: ${product.price} })">Agregar al carrito</button>
+        </div>
+    `;
+
+    productContainer.appendChild(card);
+});
