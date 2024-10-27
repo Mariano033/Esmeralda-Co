@@ -104,7 +104,7 @@ section {
 }
 
 .joya:hover  {
-    transform: scale(1.4); /* Cambié el tamaño de la transformación para que sea más sutil */
+    transform: scale(1.2); /* Cambié el tamaño de la transformación para que sea más sutil */
 }
 
 .item {
