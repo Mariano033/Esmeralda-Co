@@ -1,24 +1,28 @@
 const names = [
-    "Anillo de Plata", "Collar de Oro", "Pulsera de Cuero", "Anillo Full", "Anillos", "Anillo de Fuego", "anillo de plata" // ...más nombres aquí
+    "Anillo de Plata", "Collar de Oro", "Pulsera de Cuero", "Anillo Full", "Anillos", "Anillo de Fuego", "Anillo de Plata"
 ];
 const prices = [
-    5000, 7500, 3200, 8000, 9000, 10000, 8005 // ...más precios aquí
+    5000, 7500, 3200, 8000, 9000, 10000, 8005
 ];
 const images = [
-    "imagenes/anillo1plata.jpg", "imagenes/anillo2plata.jpg", "imagenes/anillo3plata.jpg" // ...más imágenes aquí
+    "imagenes/anillo1plata.jpg", "imagenes/anillo2plata.jpg", "imagenes/anillo3plata.jpg"
 ];
 
 const productContainer = document.getElementById("productContainer");
+const searchInput = document.getElementById("searchInput");
 let cart = [];
-let totalAmount = 0; // Total de la compra
+let totalAmount = 0; // Para mantener el total del carrito
 
 // Función para crear las tarjetas de productos
 function createProductCards(filter = "") {
-    let contentHtml = ""; // Reiniciar el contenido HTML
+    let contentHtml = "";
+
+    
 
     for (let i = 0; i < names.length; i++) {
         if (names[i].toLowerCase().includes(filter.toLowerCase())) {
             contentHtml += `
+            
                 <div class="card tar product" data-name="${names[i]}">
                     <img src="${images[i % images.length]}" class="card-img-top joya" alt="${names[i]}">
                     <div class="card-body tra2">
@@ -31,83 +35,92 @@ function createProductCards(filter = "") {
         }
     }
 
-    if (!contentHtml) {
-        contentHtml += `<p class="text-center aviso" style="color: red;">El producto no se encuentra disponible.</p>`;
-    }
-
     productContainer.innerHTML = contentHtml;
 
-    // Agregar evento a los botones de "Agregar al carrito"
-    const addToCartButtons = document.querySelectorAll('.add-to-cart');
-    addToCartButtons.forEach(button => {
-        button.addEventListener('click', addToCart);
+    // Agregar funcionalidad a los botones de "Agregar al carrito"
+    document.querySelectorAll(".add-to-cart").forEach(button => {
+        button.addEventListener("click", function () {
+            const productName = this.getAttribute("data-name");
+            const productPrice = parseFloat(this.getAttribute("data-price"));
+            addToCart(productName, productPrice);
+        });
     });
 }
 
-// Inicializar las tarjetas al cargar la página
-createProductCards();
-
 // Función para agregar productos al carrito
-function addToCart(event) {
-    const name = event.target.getAttribute('data-name');
-    const price = parseFloat(event.target.getAttribute('data-price'));
-    cart.push({ name, price });
-    totalAmount += price; // Sumar el precio al total
+function addToCart(productName, productPrice) {
+    const product = cart.find(item => item.name === productName);
+    if (product) {
+        product.quantity += 1;
+    } else {
+        cart.push({ name: productName, price: productPrice, quantity: 1 });
+    }
 
-    // Mostrar mensaje estético con la descripción del producto
-    showProductAddedMessage(name, price);
+    totalAmount += productPrice; // Sumar el precio al total
     updateCartIcon();
 }
 
-// Función para mostrar el mensaje de producto agregado
-function showProductAddedMessage(name, price) {
-    const message = document.createElement('div');
-    message.className = 'alert alert-success';
-    message.innerHTML = `<strong>Producto agregado:</strong> ${name} - $${price} <button class="btn btn-danger btn-sm" onclick="removeFromCart('${name}')">Borrar</button>`;
-    
-    document.body.appendChild(message);
-    
-    setTimeout(() => {
-        message.remove();
-    }, 3000); // El mensaje se cierra después de 3 segundos
-}
-
-// Función para actualizar el icono del carrito
+// Función para actualizar el ícono del carrito
 function updateCartIcon() {
     const cartIcon = document.getElementById("cartIcon");
-    cartIcon.textContent = cart.length; // Actualiza el número de productos en el carrito
+    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+    cartIcon.textContent = totalItems;
 }
 
-// Función para remover productos del carrito
-function removeFromCart(name) {
-    const productIndex = cart.findIndex(product => product.name === name);
-    if (productIndex > -1) {
-        totalAmount -= cart[productIndex].price; // Restar el precio del total
-        cart.splice(productIndex, 1); // Eliminar el producto del carrito
-        updateCartIcon(); // Actualizar el icono del carrito
+// Función para mostrar el resumen del carrito
+function showCartSummary() {
+    const cartSummary = document.getElementById("cartSummary");
+    const totalAmountDisplay = document.getElementById("totalAmountDisplay");
+    cartSummary.innerHTML = "";
+    
+    cart.forEach(item => {
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `${item.name} - $${item.price} x ${item.quantity} 
+        <button class="btn btn-danger btn-sm" onclick="removeFromCart('${item.name}')">Eliminar</button>`;
+        cartSummary.appendChild(listItem);
+    });
+
+    totalAmountDisplay.textContent = totalAmount.toFixed(2); // Mostrar el total
+    const cartModal = new bootstrap.Modal(document.getElementById("cartModal"));
+    cartModal.show();
+}
+
+// Función para eliminar productos del carrito
+function removeFromCart(productName) {
+    const productIndex = cart.findIndex(item => item.name === productName);
+    if (productIndex !== -1) {
+        totalAmount -= cart[productIndex].price * cart[productIndex].quantity; // Restar del total
+        cart.splice(productIndex, 1); // Eliminar producto del carrito
     }
+    updateCartIcon();
+    showCartSummary();
 }
 
-// Función para finalizar la compra
+// Función para finalizar la compra y compartir en WhatsApp
 function finalizePurchase() {
-    if (cart.length === 0) {
-        alert("El carrito está vacío. Agrega productos antes de finalizar la compra.");
-        return;
-    }
+    let message = "Resumen de tu compra:\n";
+    cart.forEach(item => {
+        message += `${item.quantity}x ${item.name} - $${item.price}\n`;
+    });
+    message += `Total: $${totalAmount.toFixed(2)}\n`;
+    message += "Datos bancarios: [Eseralda2024.mp]";
 
-    const productDetails = cart.map(product => `${product.name} - $${product.price}`).join("\n");
-    const message = `Detalles de la compra:\n${productDetails}\nTotal: $${totalAmount}`;
-    const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/3518042065?text=${encodedMessage}`, '_blank'); // Cambiar el número de WhatsApp según sea necesario
+    const whatsappUrl = `https://wa.me/3518042065?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, "_blank");
 
-    cart = []; // Limpiar el carrito
-    totalAmount = 0; // Reiniciar el total
-    updateCartIcon(); // Actualizar el icono del carrito
+    // Reiniciar el carrito
+    cart = [];
+    totalAmount = 0;
+    updateCartIcon();
+    const cartModal = bootstrap.Modal.getInstance(document.getElementById("cartModal"));
+    cartModal.hide();
 }
 
-// Evento para el botón de finalizar compra
-const finalizeButton = document.createElement('button');
-finalizeButton.textContent = 'Finalizar Compra';
-finalizeButton.className = 'btn btn-primary';
-finalizeButton.onclick = finalizePurchase;
-document.body.appendChild(finalizeButton);
+// Filtrar productos en tiempo real
+searchInput.addEventListener("input", function () {
+    const filter = searchInput.value;
+    createProductCards(filter);
+});
+
+// Cargar los productos al cargar la página
+createProductCards();

@@ -44,6 +44,10 @@
                         </ul>
                     </li>
                 </ul>
+                <!-- Ícono del carrito -->
+                <a href="#" class="carrito" onclick="showCartSummary()">
+                    <i class="bi bi-cart4 cart"></i> <span  id="cartIcon">0</span>
+                </a>
             </div>
         </div>
     </nav>
@@ -69,6 +73,28 @@
     <section class="py-5 container d-flex flex-wrap justify-content-center" id="productContainer">
         <!-- Aquí se agregarán dinámicamente las tarjetas de productos -->
     </section>
+
+    <!-- Modal para mostrar resumen del carrito -->
+    <div id="cartModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Carrito de Compras</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cartSummary"></ul>
+                    <p><strong>Total: $<span id="totalAmountDisplay">0</span></strong></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" onclick="finalizePurchase()">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer-->
     <footer class="py-5 bg-dark ">

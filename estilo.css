@@ -12,6 +12,16 @@ body {
     border-radius: 60px;
 }
 
+.carrito{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.carrito:hover{
+    color: rgb(10, 143, 10);
+
+}
 .titulop {
     color: rgb(116, 115, 115);
     text-align: center;
@@ -30,6 +40,14 @@ body {
     margin-top: 40px;
     max-width: 100%;
     height: auto;
+}
+
+#searchInput{
+  font-style:italic;
+  font-weight: 600;
+  background-color: rgb(186, 255, 200);
+  box-shadow: none;
+  border: 1px solid rgb(186, 255, 200) ;
 }
 
 h2 {
@@ -78,8 +96,8 @@ section {
     transition: transform 0.3s ease;
 }
 
-.tar:hover .joya {
-    transform: scale(1.2); /* Cambié el tamaño de la transformación para que sea más sutil */
+.joya:hover  {
+    transform: scale(1.4); /* Cambié el tamaño de la transformación para que sea más sutil */
 }
 
 .item {
