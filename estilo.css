@@ -88,8 +88,15 @@ section {
     border: solid 1px rgb(192, 191, 191);
     border-radius: 3%;
     width: 180px;
-    font-size: 20px;
+    font-size: 16px;
 }
+.add-to-cart{
+    background-color: rgb(186, 255, 200);
+    border: 1px solid rgb(180, 247, 194)  ;
+    color: black;
+}
+
+
 
 .joya {
     width: 100%; /* Asegurarse de que la imagen se ajuste al contenedor */
