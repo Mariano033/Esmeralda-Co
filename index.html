@@ -21,9 +21,14 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="menu">
         <div class="container-fluid">
             <img src="./imagenes/logo3verd.png" class="logo">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="d-flex align-items-center"> <!-- Nueva div para alinear el carrito y el menú -->
+                <a href="#" class="carrito me-3" onclick="showCartSummary()">
+                    <i class="bi bi-cart4 cart"></i> <span id="cartIcon">0</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -44,10 +49,6 @@
                         </ul>
                     </li>
                 </ul>
-                <!-- Ícono del carrito -->
-                <a href="#" class="carrito" onclick="showCartSummary()">
-                    <i class="bi bi-cart4 cart"></i> <span id="cartIcon">0</span>
-                </a>
             </div>
         </div>
     </nav>
@@ -69,7 +70,7 @@
     <div class="container formulario">
         <input type="text" id="searchInput" placeholder="Buscar artículos" class="form-control mb-4">
     </div>
-    
+    <h4 class="text-center">Plata 925</h4>
     <section class="py-5 container d-flex flex-wrap justify-content-center" id="productContainer">
         <!-- Aquí se agregarán dinámicamente las tarjetas de productos -->
     </section>

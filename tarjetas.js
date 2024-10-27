@@ -57,7 +57,7 @@ function finalizePurchase() {
     const totalAmount = cart.reduce((sum, product) => sum + product.price, 0);
 
     const message = `Detalles de la compra:\n${purchaseDetails}\nTotal: $${totalAmount}`;
-    const whatsappLink = `https://wa.me/?text=${encodeURIComponent(message)}`;
+    const whatsappLink = "https://wa.me/message/ZGSVAUVGJTEHI1";
 
     window.open(whatsappLink, '_blank'); // Abrir WhatsApp con los detalles
     resetCart(); // Reiniciar el carrito después de finalizar la compra
@@ -65,14 +65,10 @@ function finalizePurchase() {
 
 // Crear productos de ejemplo y agregar al contenedor
 const products = [
-    { id: 1, name: 'Anillo de Plata', price: 100, },
-    { id: 2, name: 'Collar de Plata', price: 150 },
-    { id: 3, name: 'Pulsera de Plata', price: 80 },
-    { id: 4, name: 'Pendientes de Plata', price: 120 },
-    { id: 5, name: 'Anillo de Plata', price: 100, },
-    { id: 6, name: 'Collar de Plata', price: 150 },
-    { id: 7, name: 'Pulsera de Plata', price: 80 },
-    { id: 8, name: 'Pendientes de Plata', price: 120 }
+    { id: 1, name: 'Anillo de Plata', price: 100, image: './imagenes/anillo1plata.jpg' },
+    { id: 2, name: 'Collar de Plata', price: 150, image: './imagenes/anillo4plata.jpg' },
+    { id: 3, name: 'Pulsera de Plata', price: 80, image: './imagenes/anillo5plata.jpg' },
+    { id: 4, name: 'Pendientes de Plata', price: 120, image: './imagenes/anillo9plata.jpg' },
 ];
 
 // Agregar productos al contenedor
@@ -83,7 +79,7 @@ products.forEach(product => {
     card.style.width = '18rem';
 
     card.innerHTML = `
-        <img src="./imagenes/producto${product.id}.jpg" class="card-img-top" alt="${product.name}">
+        <img src="${product.image}" class="card-img-top" alt="${product.name}">
         <div class="card-body">
             <h5 class="card-title">${product.name}</h5>
             <p class="card-text">$${product.price}</p>
