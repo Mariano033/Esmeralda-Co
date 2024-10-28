@@ -35,7 +35,30 @@ body {
     overflow: hidden;
     width: 100%;
 }
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50; /* Verde elegante */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    z-index: 1000;
+    transition: opacity 0.5s ;
+  }
+  
 
+  .hidden {
+   opacity: 0;
+   visibility: hidden;
+  }
+
+  .show{
+    opacity: 1;
+    visibility: visible;
+  }
 .imagen1 {
     margin-top: 40px;
     max-width: 100%;

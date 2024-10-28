@@ -1,4 +1,3 @@
-// Arreglo para almacenar los productos en el carrito
 let cart = [];
 const cartSummary = document.getElementById('cartSummary');
 const totalAmountDisplay = document.getElementById('totalAmountDisplay');
@@ -8,6 +7,7 @@ const cartIcon = document.getElementById('cartIcon');
 function addToCart(product) {
     cart.push(product);
     updateCart();
+    showNotification(); // Mostrar notificación al agregar al carrito
 }
 
 // Actualiza el carrito
@@ -37,13 +37,14 @@ function removeFromCart(index) {
 // Mostrar el resumen del carrito en el modal
 function showCartSummary() {
     const cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
+    updateCart(); // Actualizar el carrito antes de mostrar el modal
     cartModal.show();
 }
 
-// Reiniciar el carrito al cerrar el modal
-function resetCart() {
-    cart = [];
-    updateCart();
+// No reiniciar el carrito al cerrar el modal
+function closeModal() {
+    const cartModal = bootstrap.Modal.getInstance(document.getElementById('cartModal'));
+    cartModal.hide();
 }
 
 // Finalizar compra
@@ -60,7 +61,8 @@ function finalizePurchase() {
     const whatsappLink = "https://wa.me/message/ZGSVAUVGJTEHI1";
 
     window.open(whatsappLink, '_blank'); // Abrir WhatsApp con los detalles
-    resetCart(); // Reiniciar el carrito después de finalizar la compra
+    cart = []; // Reiniciar el carrito después de finalizar la compra
+    updateCart(); // Actualizar la interfaz después de la compra
 }
 
 // Crear productos de ejemplo y agregar al contenedor
@@ -89,3 +91,18 @@ products.forEach(product => {
 
     productContainer.appendChild(card);
 });
+
+// Mostrar notificación al agregar un producto
+function showNotification() {
+    const notification = document.getElementById('notification');
+    notification.classList.remove('hidden');
+    notification.classList.add('show');
+
+    // Desaparecer después de 3 segundos
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => {
+            notification.classList.add('hidden');
+        }, 500); // Sincronizado con el tiempo de la animación
+    }, 3000);
+}
