@@ -101,6 +101,11 @@ section {
     justify-content: center; /* Centrar los resultados de búsqueda */
 }
 
+.buscador{
+    background-color: rgb(186, 255, 200);
+    border: solid black 1px;
+}
+
 .botonfil {
     margin-left: 160px;
 }

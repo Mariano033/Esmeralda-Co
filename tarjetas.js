@@ -48,7 +48,7 @@ function closeModal() {
 }
 
 // Finalizar compra
-function finalizePurchase() {
+async function finalizePurchase() {
     if (cart.length === 0) {
         alert("El carrito está vacío. Agrega productos antes de finalizar la compra.");
         return;
@@ -56,12 +56,39 @@ function finalizePurchase() {
 
     const purchaseDetails = cart.map(product => `${product.name} - $${product.price}`).join('\n');
     const totalAmount = cart.reduce((sum, product) => sum + product.price, 0);
-
     const message = `Detalles de la compra:\n${purchaseDetails}\nTotal: $${totalAmount}`;
-    const whatsappLink = "https://wa.me/message/ZGSVAUVGJTEHI1";
 
-    window.open(whatsappLink, '_blank'); // Abrir WhatsApp con los detalles
-    cart = []; // Reiniciar el carrito después de finalizar la compra
+    // Generar PDF
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    doc.text("Resumen de la compra", 10, 10);
+    doc.text(message, 10, 20);
+
+    // Guardar el PDF
+    const pdfOutput = doc.output('blob');
+    const pdfUrl = URL.createObjectURL(pdfOutput);
+
+    // Descargar el PDF
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'resumen_compra.pdf'; // Nombre del archivo
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // Mensaje para WhatsApp
+    const whatsappMessage = encodeURIComponent(message);
+    const whatsappLink = `https://wa.me/message/ZGSVAUVGJTEHI1=${whatsappMessage}`;
+
+    // Abrir WhatsApp con el mensaje
+    window.open(whatsappLink, '_blank');
+
+    // Instrucciones al usuario
+    alert("El PDF se ha descargado. Puedes compartirlo manualmente por WhatsApp.");
+
+    // Limpiar el carrito después de finalizar la compra
+    cart = []; 
     updateCart(); // Actualizar la interfaz después de la compra
 }
 
@@ -75,7 +102,6 @@ const categories = [
             { id: 3, name: 'Pulsera de Plata', price: 80, image: './imagenes/anillo5plata.jpg' },
             { id: 4, name: 'Anillo de Plata', price: 100, image: './imagenes/anillo1plata.jpg' },
             { id: 5, name: 'Collar de Plata', price: 150, image: './imagenes/anillo4plata.jpg' },
-            
         ],
     },
     {
