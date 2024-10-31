@@ -66,30 +66,86 @@ function finalizePurchase() {
 }
 
 // Crear productos de ejemplo y agregar al contenedor
-const products = [
-    { id: 1, name: 'Anillo de Plata', price: 100, image: './imagenes/anillo1plata.jpg' },
-    { id: 2, name: 'Collar de Plata', price: 150, image: './imagenes/anillo4plata.jpg' },
-    { id: 3, name: 'Pulsera de Plata', price: 80, image: './imagenes/anillo5plata.jpg' },
-    { id: 4, name: 'Pendientes de Plata', price: 120, image: './imagenes/anillo9plata.jpg' },
+const categories = [
+    {
+        title: 'Joyas de Plata',
+        products: [
+            { id: 1, name: 'Anillo de Plata', price: 100, image: './imagenes/anillo1plata.jpg' },
+            { id: 2, name: 'Collar de Plata', price: 150, image: './imagenes/anillo4plata.jpg' },
+            { id: 3, name: 'Pulsera de Plata', price: 80, image: './imagenes/anillo5plata.jpg' },
+            { id: 4, name: 'Anillo de Plata', price: 100, image: './imagenes/anillo1plata.jpg' },
+            { id: 5, name: 'Collar de Plata', price: 150, image: './imagenes/anillo4plata.jpg' },
+            
+        ],
+    },
+    {
+        title: 'Acero Blanco',
+        products: [
+            { id: 4, name: 'Anillo de Acero Blanco', price: 120, image: './imagenes/anillo1acero.jpg' },
+            { id: 5, name: 'Collar de Acero Blanco', price: 130, image: './imagenes/anillo2acero.jpg' },
+        ],
+    },
+    {
+        title: 'Acero Dorado',
+        products: [
+            { id: 6, name: 'Anillo de Acero Dorado', price: 140, image: './imagenes/anillo3acero.jpg' },
+            { id: 7, name: 'Collar de Acero Dorado', price: 160, image: './imagenes/anillo4acero.jpg' },
+        ],
+    },
+    {
+        title: 'Acero Rose',
+        products: [
+            { id: 8, name: 'Anillo de Acero Rose', price: 150, image: './imagenes/anillo5acero.jpg' },
+            { id: 9, name: 'Collar de Acero Rose', price: 170, image: './imagenes/anillo6acero.jpg' },
+        ],
+    },
+    {
+        title: 'Bolsos',
+        products: [
+            { id: 10, name: 'Bolso de Cuero', price: 200, image: './imagenes/bolso1.jpg' },
+            { id: 11, name: 'Bolso de Tela', price: 80, image: './imagenes/bolso2.jpg' },
+        ],
+    },
 ];
 
 // Agregar productos al contenedor
 const productContainer = document.getElementById('productContainer');
-products.forEach(product => {
-    const card = document.createElement('div');
-    card.classList.add('card', 'm-2', 'text-center');
-    card.style.width = '18rem';
 
-    card.innerHTML = `
-        <img src="${product.image}" class="card-img-top" alt="${product.name}">
-        <div class="card-body">
-            <h5 class="card-title">${product.name}</h5>
-            <p class="card-text">$${product.price}</p>
-            <button class="btn btn-success" onclick="addToCart({ name: '${product.name}', price: ${product.price} })">Agregar al carrito</button>
-        </div>
-    `;
+// Recorrer las categorías y productos para mostrarlos
+categories.forEach(category => {
+    // Crear un contenedor para la categoría
+    const categoryContainer = document.createElement('div');
+    categoryContainer.classList.add('my-4'); // Margen vertical para separación
 
-    productContainer.appendChild(card);
+    // Crear un título para la categoría
+    const categoryTitle = document.createElement('h2');
+    categoryTitle.textContent = category.title;
+    categoryTitle.classList.add('text-center'); // Centrar el título
+    categoryContainer.appendChild(categoryTitle);
+
+    // Crear un contenedor para los productos
+    const productWrapper = document.createElement('div');
+    productWrapper.classList.add('d-flex', 'justify-content-center', 'flex-wrap'); // Alinear productos al centro y permitir wrap
+
+    category.products.forEach(product => {
+        const card = document.createElement('div');
+        card.classList.add('card', 'm-2', 'text-center');
+        card.style.width = '12rem'; // Ajusta el ancho según sea necesario
+
+        card.innerHTML = `
+            <img src="${product.image}" class="card-img-top" alt="${product.name}">
+            <div class="card-body">
+                <h5 class="card-title">${product.name}</h5>
+                <p class="card-text">$${product.price}</p>
+                <button class="btn btn-success botonn" onclick="addToCart({ name: '${product.name}', price: ${product.price} })">Agregar al carrito</button>
+            </div>
+        `;
+
+        productWrapper.appendChild(card);
+    });
+
+    categoryContainer.appendChild(productWrapper); // Agregar el contenedor de productos a la categoría
+    productContainer.appendChild(categoryContainer); // Agregar el contenedor de categoría al contenedor principal
 });
 
 // Mostrar notificación al agregar un producto
