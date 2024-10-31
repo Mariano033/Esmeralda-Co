@@ -79,7 +79,7 @@ async function finalizePurchase() {
 
     // Mensaje para WhatsApp
     const whatsappMessage = encodeURIComponent(message);
-    const whatsappLink = `https://wa.me/message/ZGSVAUVGJTEHI1=${whatsappMessage}`;
+    const whatsappLink = `https://wa.me/543518042065?text=${whatsappMessage}`;
 
     // Abrir WhatsApp con el mensaje
     window.open(whatsappLink, '_blank');
