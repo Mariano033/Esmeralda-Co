@@ -19,7 +19,7 @@ function updateCart() {
     cart.forEach((product, index) => {
         const li = document.createElement('li');
         li.textContent = `${product.name} - $${product.price}`;
-        li.innerHTML += ` <button onclick="removeFromCart(${index})">Eliminar</button>`;
+        li.innerHTML += ` <button class="eliminar" onclick="removeFromCart(${index})">Eliminar</button>`;
         cartSummary.appendChild(li);
         totalAmount += product.price;
     });
@@ -133,6 +133,10 @@ const categories = [
         ],
     },
 ];
+
+
+
+
 
 // Agregar productos al contenedor
 const productContainer = document.getElementById('productContainer');

@@ -122,6 +122,8 @@ h2 {
     text-align: center; /* Asegúrate de que el texto esté centrado */
 }
 
+
+
 .productWrapper {
     display: flex;
     justify-content: center;
@@ -188,7 +190,13 @@ h2 {
     width: 55px;
     height: 52px;
 }
-
+.eliminar{
+    background-color: rgb(243, 21, 21);
+    margin-top: 4px;
+    border: transparent;
+    border-radius: 6px;
+    color: white;
+}
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
     .formulario {

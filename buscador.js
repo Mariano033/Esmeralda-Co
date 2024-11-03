@@ -52,7 +52,7 @@ function searchProducts(query) {
     // Si no hay resultados, mostrar un mensaje
     if (!hasResults) {
         const noResultsMessage = document.createElement('p');
-        noResultsMessage.textContent = 'No se encontraron productos.';
+        noResultsMessage.textContent = 'El producto no se encuentra disponible.';
         noResultsMessage.classList.add('text-center');
         productContainer.appendChild(noResultsMessage);
     }
