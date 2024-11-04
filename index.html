@@ -22,14 +22,20 @@
         <div class="container-fluid">
             <img src="./imagenes/logo3verd.png" class="logo">
             
+            <!-- Menú hamburguesa y carrito en la misma fila -->
+            <div class="d-flex align-items-center">
+                <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="#" class="carrito" onclick="showCartSummary()">
+                    <i class="bi bi-cart4 cart"></i> <span id="cartIcon">0</span>
+                </a>
+            </div>
+            
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index2.html">Nosotros</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index2.html">Nosotros</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Joyas</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -42,14 +48,6 @@
                         </ul>
                     </li>
                 </ul>
-                <div class="d-flex align-items-center"> <!-- Nueva div para alinear el carrito y el menú -->
-                    <a href="#" class="carrito me-3" onclick="showCartSummary()">
-                        <i class="bi bi-cart4 cart"></i> <span id="cartIcon">0</span>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
             </div>
         </div>
     </nav>
