@@ -76,12 +76,13 @@ body {
 
 h2 {
     font-size: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     color: grey;
-    margin-top: 40px;
+    
 }
 
 section {
+    margin-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -105,7 +106,8 @@ section {
 
 .buscador{
     background-color: rgb(186, 255, 200);
-    border: solid black 1px;
+    border: solid transparent 1px;
+    border-radius: 8px;
 }
 
 .botonfil {

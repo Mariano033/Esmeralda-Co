@@ -95,6 +95,7 @@ async function finalizePurchase() {
 // Crear productos de ejemplo y agregar al contenedor
 const categories = [
     {
+        id: 'joyas-plata', // ID para Joyas de Plata
         title: 'Joyas de Plata',
         products: [
             { id: 1, name: 'Anillo de Plata', price: 100, image: './imagenes/anillo1plata.jpg' },
@@ -102,9 +103,11 @@ const categories = [
             { id: 3, name: 'Pulsera de Plata', price: 80, image: './imagenes/anillo5plata.jpg' },
             { id: 4, name: 'Anillo de Plata', price: 100, image: './imagenes/anillo1plata.jpg' },
             { id: 5, name: 'Collar de Plata', price: 150, image: './imagenes/anillo4plata.jpg' },
+            
         ],
     },
     {
+        id: 'acero-blanco', // ID para Acero Blanco
         title: 'Acero Blanco',
         products: [
             { id: 4, name: 'Anillo de Acero Blanco', price: 120, image: './imagenes/anillo1acero.jpg' },
@@ -112,6 +115,7 @@ const categories = [
         ],
     },
     {
+        id: 'acero-dorado', // ID para Acero Dorado
         title: 'Acero Dorado',
         products: [
             { id: 6, name: 'Anillo de Acero Dorado', price: 140, image: './imagenes/anillo3acero.jpg' },
@@ -119,6 +123,7 @@ const categories = [
         ],
     },
     {
+        id: 'acero-rose', // ID para Acero Rose
         title: 'Acero Rose',
         products: [
             { id: 8, name: 'Anillo de Acero Rose', price: 150, image: './imagenes/anillo5acero.jpg' },
@@ -126,6 +131,7 @@ const categories = [
         ],
     },
     {
+        id: 'bolsos', // ID para Bolsos
         title: 'Bolsos',
         products: [
             { id: 10, name: 'Bolso de Cuero', price: 200, image: './imagenes/bolso1.jpg' },
@@ -133,7 +139,6 @@ const categories = [
         ],
     },
 ];
-
 
 
 
