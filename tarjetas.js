@@ -98,6 +98,7 @@ const categories = [
         id: 'joyas-plata', // ID para Joyas de Plata
         title: 'Joyas de Plata',
         products: [
+            
             { id: 1, name: 'Anillo Feli con Cubic', price: 100, image: './imagenes/Anillo Feli con cubic PLATA.jpg' },
             { id: 2, name: 'Anillo Hortencia con Cubic', price: 150, image: 'imagenes/Anillo Hortensia con cubic PLATA.jpg' },
             { id: 3, name: 'Anillo Florencia con Cubic', price: 80, image: './imagenes/Anillo Florencia con cubic PLATA.jpg' },
@@ -105,6 +106,19 @@ const categories = [
             { id: 5, name: 'Anillo Rosa con Cubic', price: 150, image: 'imagenes/Anillo Rosa con cubic PLATA.jpg' },
             { id: 6, name: 'Anillo Theo con Cubic', price: 150, image: 'imagenes/Anillo Theo con cubicPLATA.jpg' },
             { id: 7, name: 'Anillo Corona con Cubic', price: 150, image: 'imagenes/Anillos corona facetada PLATA 925.jpg' },
+
+            { id: 8, name: 'Abridor Comillas', price: 100, image: 'imagenes/Abridor comillas PLATA.jpg' },
+            { id: 9, name: 'Abridor Cruz', price: 150, image: 'imagenes/Abridor cruz PLATA.jpg' },
+            { id: 10, name: 'Abridor Gota Azul', price: 80, image: 'imagenes/Abridor gota azul PLATA.jpg' },
+            { id: 11, name: 'Abridor Mari', price: 100, image: 'imagenes/Abridor Mari PLATA.jpg' },
+            { id: 12, name: 'Abridor Susi', price: 150, image: 'imagenes/Abridor Susi PLATA.jpg' },
+            { id: 13, name: 'Abridor Triángulo', price: 150, image: 'imagenes/Abridor triángulo PLATA.jpg' },
+            { id: 14, name: 'Abridor Cuadrado', price: 150, image: 'imagenes/Abridores cuadrados PLATA.jpg' },
+            { id: 15, name: 'Argolla Corazón', price: 150, image: 'imagenes/Argolla corazón PLATA.jpg' },
+            { id: 16, name: 'Argolla Guadalupe', price: 150, image: 'imagenes/Argolla Guadalupe PLATA.jpg' },
+            { id: 17, name: 'Argolla Infinito', price: 150, image: 'imagenes/Argolla infinito PLATA.jpg' },
+            { id: 18, name: 'Argolla', price: 150, image: '' },
+            { id: 19, name: 'Argolla ', price: 150, image: '' },
             
         ],
     },
@@ -112,8 +126,67 @@ const categories = [
         id: 'acero-blanco', // ID para Acero Blanco
         title: 'Acero Blanco',
         products: [
-            { id: 4, name: 'Anillo de Acero Blanco', price: 120, image: './imagenes/anillo1acero.jpg' },
-            { id: 5, name: 'Collar de Acero Blanco', price: 130, image: './imagenes/anillo2acero.jpg' },
+            
+            { id: 20, name: 'Anillo Corazones con Cubic', price: 100, image: 'imagenes/Anillo corazones con cubic AB.jpg' },
+            { id: 21, name: 'Anillo Cleo con Cubic', price: 150, image: 'imagenes/Anillo Cleo con Cubic AB.jpg' },
+            { id: 22, name: 'Anillo Alas con Corazón', price: 80, image: 'imagenes/Anillo alas con corazón AB.jpg' },
+            { id: 23, name: 'Anillo  Amelia', price: 100, image: 'imagenes/Anillo Amelia AB.jpg' },
+            { id: 24, name: 'Anillo Esmeralda', price: 150, image: 'imagenes/Anillo Esmeralda AB.jpg' },
+            { id: 25, name: 'Anillo Estrella y Luna', price: 150, image: 'imagenes/Anillo estrella y luna AB.jpg' },
+            { id: 26, name: 'Anillo Flores', price: 150, image: 'imagenes/Anillo flores AB.jpg' },
+            { id: 27, name: 'Anillo Gota con Cubic', price: 150, image: 'imagenes/Anillo gota con Cubic AB.jpg' },
+            
+            { id: 28, name: 'Anillo Hazel', price: 150, image: 'imagenes/Anillo Hazel AB.jpg' },
+            { id: 29, name: 'Anillo Mariposa', price: 150, image: 'imagenes/Anillo mariposa AB.jpg' },
+            { id: 30, name: 'Anillo Hojas', price: 150, image: 'imagenes/Anillo hojas AB.jpg' },
+            { id: 31, name: 'Anillo Olas con Cubic', price: 150, image: 'imagenes/Anillo olas con Cubic AB.jpg' },
+
+            { id: 32, name: 'Anillo Ondas con Corazón', price: 150, image: 'imagenes/Anillo Ondas con corazón AB.jpg' },
+            { id: 33, name: 'Anillo Ondas y Bolitas', price: 150, image: 'imagenes/Anillo ondas y bolitas AB.jpg' },
+            { id: 34, name: 'Anillo Serpiente', price: 150, image: 'imagenes/Anillo serpiente detalles AB .jpg' },
+            { id: 35, name: 'Anillo Rayo', price: 150, image: 'imagenes/Anillo Rayo con Cubic AB.jpg' },
+
+            { id: 36, name: 'Anillo Serpeinte', price: 150, image: 'imagenes/Anillo serpiente detalles AB .jpg' },
+            { id: 37, name: 'Anillo Theo', price: 150, image: 'imagenes/Anillo Theo AB.jpg' },
+            { id: 38, name: 'Anillo Ola', price: 150, image: 'imagenes/Anillos ola AB.jpg' },
+
+            { id: 39, name: 'Argolla Nat', price: 150, image: 'imagenes/Argolla Nat AB.jpg' },
+            { id: 40, name: 'Argolla Dana con Cubic', price: 150, image: 'imagenes/Argolla Dana con cubic de colores AB.jpg' },
+            { id: 41, name: 'Argolla Estrella con Cubic', price: 150, image: 'imagenes/Argolla estrella con cubic de colores AB.jpg' },
+            { id: 42, name: 'Argolla Clasicas', price: 150, image: 'imagenes/Argollas clasicas AB.jpg' },
+            { id: 43, name: 'Argolla Dobles con Cubic ', price: 150, image: 'imagenes/Argollas dobles con cubic AB.jpg' },
+            { id: 44, name: 'Argolla Duquesa con Cubic ', price: 150, image: 'imagenes/Argollas duquesa con cubic AB.jpg' },
+
+            { id: 45, name: 'Argolla Nat', price: 150, image: 'imagenes/Argollas Nat AB.jpg' },
+            { id: 46, name: 'Argolla Stef', price: 150, image: 'imagenes/Argollas Stef AB.jpg' },
+            { id: 47, name: 'Aro Trepador ', price: 150, image: 'imagenes/Aro trepador con cuff de mariposa con cubic AB.jpg' },
+            { id: 48, name: 'Argolla Estrella Calada', price: 150, image: 'imagenes/Argollitas Estella caladas AB.jpg' },
+            { id: 49, name: 'Argolla Estrella ', price: 150, image: 'imagenes/Argollas estrellas AB.jpg' },
+            { id: 50, name: 'Aros Círculo con Cubic ', price: 150, image: 'imagenes/Aros círculo con cubic AB.jpg' },
+
+            { id: 51, name: 'Aros Círculo', price: 150, image: 'imagenes/Aros círculos AB.jpg' },
+            { id: 52, name: 'Aros Colgantes de Corazones ', price: 150, image: 'imagenes/Aros colgantes de corazón con cubic AB.jpg' },
+            { id: 53, name: 'Aros Colgantes Gotas ', price: 150, image: 'imagenes/Aros colgantes gotas AB.jpg' },
+            { id: 54, name: 'Aros Estrella con Cubic', price: 150, image: 'imagenes/Aros estrellas con cubic AB.jpg' },
+            { id: 55, name: 'Aros Hojas con Cubic', price: 150, image: 'imagenes/Aros hojas con cubic AB.jpg' },
+            { id: 56, name: 'Aros Matilda Con Cubic ', price: 150, image: 'imagenes/Aros Matilda con cubicAB.jpg' },
+
+
+            { id: 57, name: 'Aros Rectángulo con Cubic', price: 150, image: 'imagenes/Aros rectángulo con cubic AB.jpg' },
+            { id: 58, name: 'Aros Nudos ', price: 150, image: 'imagenes/Aros nudos AB.jpg' },
+            { id: 59, name: 'Aros Serpiente con Cubic ', price: 150, image: 'imagenes/Aros serpiente con cubic AB.jpg' },
+            { id: 60, name: 'Aros Sinfín con Cubic', price: 150, image: 'imagenes/Aros sinfín con cubic AB.jpg' },
+            { id: 61, name: 'Cuff Perú con Cubic', price: 150, image: 'imagenes/Cuff Perú con cubic AB.jpg' },
+            { id: 62, name: 'Cuff  Rectángulos  ', price: 150, image: 'imagenes/Cuff rectángulos (Acero quirúrgico) AQ.jpg' },
+            { id: 63, name: 'Cuff Serpiente con Cubic ', price: 150, image: 'imagenes/Cuff serpiente con cubic AB.jpg' },
+
+            { id: 64, name: 'Cadena Figaro 45cm', price: 150, image: 'imagenes/Cadena Fígaro 45cm AB.jpg' },
+            { id: 65, name: 'Cadena Rolo 7mm 50cm', price: 150, image: 'imagenes/Cadena rolo 7mm 50cm AB.jpg' },
+            { id: 66, name: 'Collar Mariposa', price: 150, image: 'imagenes/Collar mariposas AB.jpg' },
+            { id: 67, name: 'Collar con Corazón Hueco', price: 150, image: 'imagenes/Collar con corazón hueco AB.jpg' },
+            { id: 68, name: 'Collar y Dije Rectangular', price: 150, image: 'imagenes/Collar y dije rectangular con cubic 60cm AB.jpg' },
+            { id: 69, name: 'Cadena  ', price: 150, image: 'imagenes/IMG_20241104_153002364.jpg' },
+            { id: 70, name: 'Cadena', price: 150, image: 'imagenes/IMG_20241017_170252121.jpg' },
         ],
     },
     {
@@ -128,7 +201,7 @@ const categories = [
         id: 'acero-rose', // ID para Acero Rose
         title: 'Acero Rose',
         products: [
-            { id: 8, name: 'Anillo de Acero Rose', price: 150, image: './imagenes/anillo5acero.jpg' },
+            { id: 8, name: 'Argolla Tere', price: 150, image: 'imagenes/Argolla Tere AR (2).jpg' },
             { id: 9, name: 'Collar de Acero Rose', price: 170, image: './imagenes/anillo6acero.jpg' },
         ],
     },
