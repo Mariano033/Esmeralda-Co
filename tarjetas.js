@@ -117,13 +117,15 @@ const categories = [
             { id: 15, name: 'Argolla Corazón', price: 150, image: 'imagenes/Argolla corazón PLATA.jpg' },
             { id: 16, name: 'Argolla Guadalupe', price: 150, image: 'imagenes/Argolla Guadalupe PLATA.jpg' },
             { id: 17, name: 'Argolla Infinito', price: 150, image: 'imagenes/Argolla infinito PLATA.jpg' },
-            { id: 18, name: 'Argolla', price: 150, image: '' },
-            { id: 19, name: 'Argolla ', price: 150, image: '' },
+            { id: 18, name: 'Aros Gota ', price: 150, image: 'imagenes/Aros gota PLATA .jpg' },
+            { id: 19, name: 'Argolla María ', price: 150, image: 'imagenes/Argolla María PLATA.jpg' },
             
         ],
     },
+    
     {
-        id: 'acero-blanco', // ID para Acero Blanco
+
+    id: 'acero-blanco', // ID para Acero Blanco  
         title: 'Acero Blanco',
         products: [
             
@@ -184,34 +186,148 @@ const categories = [
             { id: 65, name: 'Cadena Rolo 7mm 50cm', price: 150, image: 'imagenes/Cadena rolo 7mm 50cm AB.jpg' },
             { id: 66, name: 'Collar Mariposa', price: 150, image: 'imagenes/Collar mariposas AB.jpg' },
             { id: 67, name: 'Collar con Corazón Hueco', price: 150, image: 'imagenes/Collar con corazón hueco AB.jpg' },
-            { id: 68, name: 'Collar y Dije Rectangular', price: 150, image: 'imagenes/Collar y dije rectangular con cubic 60cm AB.jpg' },
+            { id: 68, name: 'Collar y Dije Rectangular 60cm', price: 150, image: 'imagenes/Collar y dije rectangular con cubic 60cm AB.jpg' },
             { id: 69, name: 'Cadena  ', price: 150, image: 'imagenes/IMG_20241104_153002364.jpg' },
             { id: 70, name: 'Cadena', price: 150, image: 'imagenes/IMG_20241017_170252121.jpg' },
+
+        
+
+            { id: 71, name: 'Cadena Rolo 4mm 50cm', price: 150, image: 'imagenes/Cadena rolo 4mm 50cm AB (1).jpg' },
+            { id: 72, name: 'Cadena Rolo Espiga 50cm', price: 150, image: 'imagenes/Cadena espiga 50cm AB.jpg' },
+            { id: 73, name: 'Cadena Rolo Cuadrado 50cm', price: 150, image: 'imagenes/Cadena rolo cuadrado 50cm AB.jpg' },
+            { id: 74, name: 'Cadena Palomita 50cm ', price: 150, image: 'imagenes/Cadena palomita 50cm AB.jpg' },
+            { id: 75, name: 'Cadena Madrid 50cm', price: 150, image: 'imagenes/Cadena Madrid 50cm AB.jpg' },
+            { id: 76, name: 'Cadena Salomónica 60cm', price: 150, image: 'imagenes/Cadena Salomónica 60cm AB.jpg' },
+
+
+            { id: 77, name: 'Collar Singapur 4mm 50cm', price: 150, image: 'imagenes/Cadena Singapur 50cm AB.jpg' },
+            { id: 78, name: 'Collar con Dije de Cruz', price: 150, image: 'imagenes/Collar con dije de cruz AB.jpg' },
+            { id: 79, name: 'Collar', price: 150, image: 'imagenes/IMG_20241104_155905534.jpg' },
+
+
+            { id: 80, name: 'Dije Corazón', price: 150, image: 'imagenes/Dije corazón AB.jpg' },
+            { id: 81, name: 'Dije Copo de Nieve Trnasolado', price: 150, image: 'imagenes/Dije copo de nieve tornasolado AB.jpg' },
+            { id: 82, name: 'Dije Círculo', price: 150, image: 'imagenes/Dije círculo AB.jpg' },
+            { id: 83, name: 'Dije árbol de la vida', price: 150, image: 'imagenes/Dije árbol de la vida AB.jpg' },
+            { id: 84, name: 'Dije Caracol de Mar Tornasolado', price: 150, image: 'imagenes/Dije caracol de mar tornasolado AB.jpg' },
+            { id: 85, name: 'Dije Ala ', price: 150, image: 'imagenes/Dije ala AB.jpg' },
+
+
+            { id: 86, name: 'Dije Corazón Azul ', price: 150, image: 'imagenes/Dije corazón azul AB.jpg' },
+            { id: 87, name: 'Dije Corazón', price: 150, image: 'imagenes/Dije corazón AB (1).jpg' },
+            { id: 88, name: 'Dije Corazón Naranja', price: 150, image: 'imagenes/Dije corazón naranja AB.jpg' },
+            { id: 89, name: 'Dije de Corazones con Piedra Turquesa y Cubic', price: 150, image: 'imagenes/Dije de corazones con piedra turquesa y cubic AB.jpg' },
+            { id: 90, name: 'Dije Corazón Rosa y Verde ', price: 150, image: 'imagenes/Dije corazón rosa y verde AB.jpg' },
+            { id: 91, name: 'Dije ruz de Equilibrio Tornasolado', price: 150, image: 'imagenes/Dije cruz de equilibrio tornasolado AB .jpg' },
+
+
+            { id: 92, name: 'Dije de Flor ', price: 150, image: 'imagenes/Dije de flor AB.jpg' },
+            { id: 93, name: 'Dije de Cruz', price: 150, image: 'imagenes/Dije de cruz AB.jpg' },
+            { id: 94, name: 'Dije flor con corazón ', price: 150, image: 'imagenes/Dije flor con corazón AB.jpg' },
+            { id: 95, name: 'Dije estrella con Piedra Azul ', price: 150, image: 'imagenes/Dije estrella con piedra azul AB.jpg' },
+            { id: 96, name: 'Dije Estrella de Mar Celeste', price: 150, image: 'imagenes/Dije estrella de mar celeste .jpg' },
+            { id: 97, name: 'Dije mano de Fátima', price: 150, image: 'imagenes/Dije mano de Fátima AB.jpg' },
+
+            { id: 98, name: 'Dije ', price: 150, image: 'imagenes/IMG_20241104_153815692.jpg' },
+            { id: 99, name: 'Dije Olas con Piedra Roja', price: 150, image: 'imagenes/Dije olas con piedra roja AB (1).jpg' },
+            { id: 100, name: 'Dije San Benito', price: 150, image: 'imagenes/Dije San Benito AB.jpg' },
+            { id: 101, name: 'Dije Serpiente ', price: 150, image: 'imagenes/Dije serpiente AB.jpg' },
+
+
+
+            { id: 102, name: 'Esclava 8.0 x 63 mm ', price: 150, image: 'imagenes/Esclava 8.0 x 63 mm AB.jpg' },
+            { id: 103, name: 'Esclava 3.0 x 63 mm ', price: 150, image: 'imagenes/Esclava 3.0 x 63 mm AB.jpg' },
+            { id: 104, name: 'Esclava 3.0 x 63 mm AB ', price: 150, image: 'imagenes/Esclava 3.0 x 63 mm AB (1).jpg' },
+            { id: 105, name: 'Esclava 8.0 x 63 mm ', price: 150, image: 'imagenes/Esclava 8.0 x 63 mm AB (1).jpg' },
+            { id: 106, name: 'Esclava 6.0 x 63_67', price: 150, image: 'imagenes/Esclava 6.0 x 63_67.jpg' },
+            { id: 107, name: 'Esclava 6.0 x 63_67 ', price: 150, image: 'imagenes/Esclava 6.0 x 63_67 (1).jpg' },
+
+            { id: 108, name: 'Pulsera', price: 150, image: 'imagenes/IMG_20241104_154446955.jpg' },
+            { id: 109, name: 'Pulsera ', price: 150, image: 'imagenes/IMG_20241104_154608629.jpg' },
+            { id: 110, name: 'Pulsera Astrid ', price: 150, image: 'imagenes/Pulsera Astrid AB.jpg' },
+            { id: 111, name: 'Pulsera Astrid', price: 150, image: 'imagenes/Pulsera Astrid AB (1).jpg' },
+            { id: 112, name: 'Pulsera Cola de Ratón', price: 150, image: 'imagenes/Pulsera cola de ratón AB.jpg' },
+            { id: 113, name: 'Pulsera Corazón Hueco con Bolitas', price: 150, image: 'imagenes/Pulsera corazón hueco con bolitas AB (2).jpg' },
+
+            { id: 114, name: 'Pulsera con Dije de Fuego', price: 150, image: 'imagenes/Pulsera con dije de fuego AB.jpg' },
+            { id: 115, name: 'Pulsera con Dije de Fuego ', price: 150, image: 'imagenes/Pulsera con dije de fuego AB (1).jpg' },
+            { id: 116, name: 'Pulsera Dina ', price: 150, image: 'imagenes/Pulsera Dina AB (1).jpg' },
+            { id: 117, name: 'Pulsera Dina ', price: 150, image: 'imagenes/Pulsera Dina AB.jpg' },
+            { id: 118, name: 'Pulsera Corazón Hueco con Bolitas ', price: 150, image: 'imagenes/Pulsera corazón hueco con bolitas AB (1).jpg' },
+            
+
+            { id: 119, name: 'Pulsera París  ', price: 150, image: 'imagenes/Pulsera París AB (2).jpg' },
+            { id: 120, name: 'Pulsera París', price: 150, image: 'imagenes/Pulsera París AB (3).jpg ' },
+            
+            { id: 121, name: 'Pulsera Pochoclo ', price: 150, image: 'imagenes/Pulsera pochoclo AB.jpg' },
+            { id: 122, name: 'Pulsera Pochoclo ', price: 150, image: ' imagenes/Pulsera pochoclo AB (1).jpg' },
+
+
+
+
+
+
+
         ],
+
+
+
     },
+
+
+
+        
+   
     {
         id: 'acero-dorado', // ID para Acero Dorado
         title: 'Acero Dorado',
         products: [
-            { id: 6, name: 'Anillo de Acero Dorado', price: 140, image: './imagenes/anillo3acero.jpg' },
-            { id: 7, name: 'Collar de Acero Dorado', price: 160, image: './imagenes/anillo4acero.jpg' },
+
+ 
+            { id: 123, name: 'Anillo Eslabón Grueso', price: 140, image: 'imagenes/Anillo eslabón grueso AD.jpg' },
+        
+            { id: 124, name: 'Anillo Flores ', price: 160, image: 'imagenes/Anillo flores AD.jpg' },
+
+            { id: 125, name: 'Aros Colgantes', price: 140, image: 'imagenes/Aros colgantes AD.jpg' },
+        
+            { id: 126, name: 'Aros Mariposa ', price: 160, image: 'imagenes/Aros mariposa AD.jpg' },
+            { id: 127, name: 'Aros de Corazón ', price: 160, image: 'imagenes/Aros de corazón AD.jpg' },
+
+            { id: 128, name: 'Cadena Rectangular', price: 140, image: 'imagenes/Cadena rectangular AD.jpg' },
+        
+            { id: 129, name: 'Collar con Dije de Corazón ', price: 160, image: 'imagenes/Collar con dije de corazón AD.jpg' },
+
+
+            { id: 130, name: 'Esclava 0.4 x 65 mm ', price: 140, image: 'imagenes/Esclava 0.4 x 65 mm AD.jpg' },
+        
+            { id: 131, name: 'Pulsera Cola de Topo ', price: 160, image: 'imagenes/Pulsera cola de topo AD.jpg' },
+
+           
+
+
+
         ],
     },
     {
         id: 'acero-rose', // ID para Acero Rose
         title: 'Acero Rose',
         products: [
-            { id: 8, name: 'Argolla Tere', price: 150, image: 'imagenes/Argolla Tere AR (2).jpg' },
-            { id: 9, name: 'Collar de Acero Rose', price: 170, image: './imagenes/anillo6acero.jpg' },
+            { id: 132, name: 'Argolla Tere', price: 150, image: 'imagenes/Argolla Tere AR (2).jpg' },
+          
         ],
     },
     {
         id: 'bolsos', // ID para Bolsos
-        title: 'Bolsos',
+        title: 'Proximamente vamos a ofrecer Bolsos',
+
+        
         products: [
+            /*
             { id: 10, name: 'Bolso de Cuero', price: 200, image: './imagenes/bolso1.jpg' },
             { id: 11, name: 'Bolso de Tela', price: 80, image: './imagenes/bolso2.jpg' },
+             */
         ],
+        
     },
 ];
 

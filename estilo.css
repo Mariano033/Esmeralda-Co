@@ -17,8 +17,8 @@ body {
 .carrito{
     
     text-decoration: none;
-    color: black;
-    font-size: 25px;
+    color: rgb(17, 17, 17);
+    font-size: 19px;
 }
 
 .carrito:hover{
@@ -87,7 +87,7 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
     padding: 20px; /* Añadido para espaciado */
 }
 
@@ -117,6 +117,7 @@ section {
 
 .card {
     max-width: 100%; /* Asegúrate de que las tarjetas no excedan el ancho del contenedor */
+    
 }
 
 h2 {
@@ -200,6 +201,16 @@ h2 {
     border: transparent;
     border-radius: 6px;
     color: white;
+}
+
+
+.card-img-top{
+    transition: transform 0.4s ease;
+}
+
+.card-img-top:hover{
+    transform:scale(1.2)
+    
 }
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
