@@ -98,11 +98,13 @@ const categories = [
         id: 'joyas-plata', // ID para Joyas de Plata
         title: 'Joyas de Plata',
         products: [
-            { id: 1, name: 'Anillo de Plata', price: 100, image: './imagenes/anillo1plata.jpg' },
-            { id: 2, name: 'Collar de Plata', price: 150, image: './imagenes/anillo4plata.jpg' },
-            { id: 3, name: 'Pulsera de Plata', price: 80, image: './imagenes/anillo5plata.jpg' },
-            { id: 4, name: 'Anillo de Plata', price: 100, image: './imagenes/anillo1plata.jpg' },
-            { id: 5, name: 'Collar de Plata', price: 150, image: './imagenes/anillo4plata.jpg' },
+            { id: 1, name: 'Anillo Feli con Cubic', price: 100, image: './imagenes/Anillo Feli con cubic PLATA.jpg' },
+            { id: 2, name: 'Anillo Hortencia con Cubic', price: 150, image: 'imagenes/Anillo Hortensia con cubic PLATA.jpg' },
+            { id: 3, name: 'Anillo Florencia con Cubic', price: 80, image: './imagenes/Anillo Florencia con cubic PLATA.jpg' },
+            { id: 4, name: 'Anillo Margarita', price: 100, image: 'imagenes/Anillo Margarita PLATA.jpg' },
+            { id: 5, name: 'Anillo Rosa con Cubic', price: 150, image: 'imagenes/Anillo Rosa con cubic PLATA.jpg' },
+            { id: 6, name: 'Anillo Theo con Cubic', price: 150, image: 'imagenes/Anillo Theo con cubicPLATA.jpg' },
+            { id: 7, name: 'Anillo Corona con Cubic', price: 150, image: 'imagenes/Anillos corona facetada PLATA 925.jpg' },
             
         ],
     },
