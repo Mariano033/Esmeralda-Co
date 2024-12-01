@@ -202,7 +202,7 @@ const categories = [
 
            /* { id: 77, name: 'Collar Singapur 4mm 50cm', price: 150, image: 'imagenes/Cadena Singapur 50cm AB.jpg' },*/
             { id: 78, name: 'Collar con Dije de Cruz', price:7500, image: 'imagenes/Collar con dije de cruz AB.jpg' },
-            { id: 79, name: 'Cadena palomita con Boltias 50cm', price:8000, image: 'imagenes/IMG_20241104_155905534.jpg' },
+            { id: 79, name: 'Cadena Palomita con Bolitias 50cm', price:8000, image: 'imagenes/IMG_20241104_155905534.jpg' },
 
 
             { id: 80, name: 'Dije Corazón', price:7000, image: 'imagenes/Dije corazón AB.jpg' },
