@@ -17,41 +17,38 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="menu">
-        <div class="container-fluid">
-            <img src="./imagenes/logo3verd.png" class="logo">
-            
-            <!-- Menú hamburguesa y carrito en la misma fila -->
-            <div class="d-flex align-items-center">
-                <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a href="#" class="carrito" onclick="showCartSummary()">
-                    <i class="bi bi-cart4 cart"></i> <span id="cartIcon">0</span>
-                </a>
-            </div>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="./index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./index2.html">Nosotros</a></li><!--
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Joyas</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#joyas plata">Plata 925</a></li>
-                            <li><a class="dropdown-item" href="#acero-blanco">Acero Blanco</a></li>
-                            <li><a class="dropdown-item" href="#texto3">Acero Dorado</a></li>
-                            <li><a class="dropdown-item" href="#texto4">Acero Rose</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Bolsos</a></li>
-                        </ul>
-                    </li>-->
-                </ul>
-            </div>
+   <!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="menu">
+    <div class="container-fluid">
+        <img src="./imagenes/logo3verd.png" class="logo">
+        
+        <!-- Menú hamburguesa y carrito en la misma fila -->
+        <div class="d-flex align-items-center">
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="carrito" onclick="showCartSummary()">
+                <i class="bi bi-cart4 cart"></i> <span id="cartIcon">0</span>
+            </a>
         </div>
-    </nav>
-
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="./index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="./index2.html">Nosotros</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Joyas</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#" data-id="plata">Plata</a></li>
+                        <li><a class="dropdown-item" href="#" data-id="acero-blanco">Acero Blanco</a></li>
+                        <li><a class="dropdown-item" href="#" data-id="acero-dorado">Acero Dorado</a></li>
+                        <li><a class="dropdown-item" href="#" data-id="acero-blanco">Acero Rose</a></li>
+                        
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
     <!-- Header-->
     <header class="container-fluid pt-5 header1">
         <div class="row no-gutters">
@@ -82,6 +79,7 @@
     <section class="py-5 container d-flex flex-wrap justify-content-center" id="productContainer">
         <!-- Aquí se agregarán dinámicamente las tarjetas de productos -->
     </section>
+
 
     <!-- Modal para mostrar resumen del carrito -->
     <div id="cartModal" class="modal fade" tabindex="-1" role="dialog">

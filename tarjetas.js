@@ -95,12 +95,12 @@ async function finalizePurchase() {
 // Crear productos de ejemplo y agregar al contenedor
 const categories = [
     {
-        id: 'joyas-plata', // ID para Joyas de Plata
+        id: 'plata', // ID para Joyas de Plata
         title: 'Joyas de Plata',
         products: [
             
            /*{ id: 1, name: 'Anillo Feli con Cubic', price: 100, image: './imagenes/Anillo Feli con cubic PLATA.jpg' },*/
-            { id: 2, name: 'Anillo Hortencia con Cubic T:17', price: 15000, image: 'imagenes/Anillo Hortensia con cubic PLATA.jpg' },
+            { id:2, name: 'Anillo Hortencia con Cubic T:17', price: 15000, image: 'imagenes/Anillo Hortensia con cubic PLATA.jpg' },
             { id: 3, name: 'Anillo Florencia con Cubic T:16', price:15000, image: './imagenes/Anillo Florencia con cubic PLATA.jpg' },
             { id: 4, name: 'Anillo Margarita T:18', price: 15000, image: 'imagenes/Anillo Margarita PLATA.jpg' },
             { id: 5, name: 'Anillo Onda Plata T:16 ', price: 14000, image: 'imagenes/Anillo ondas PLATA 925' },
@@ -118,14 +118,14 @@ const categories = [
             { id: 16, name: 'Argolla Guadalupe', price:15000, image: 'imagenes/Argolla Guadalupe PLATA.jpg' },
             { id: 17, name: 'Argolla Infinito', price:12000, image: 'imagenes/Argolla infinito PLATA.jpg' },
             { id: 18, name: 'Aros Gota', price: 14000, image: 'imagenes/Aros gota PLATA .jpg' },
-            { id: 19, name: 'Argolla María', price: 12000, image: 'imagenes/Argolla María PLATA.jpg' },
+            { id:19, name: 'Argolla María', price: 12000, image: 'imagenes/Argolla María PLATA.jpg' },
             
         ],
     },
     
     {
 
-    id: 'acero-blanco', // ID para Acero Blanco  
+        id: 'acero-blanco', // ID para Acero Blanco  
         title: 'Acero Blanco',
         products: [
             
@@ -325,59 +325,57 @@ const categories = [
 ];
 
 
-
-
 // Agregar productos al contenedor
 const productContainer = document.getElementById('productContainer');
 
 // Recorrer las categorías y productos para mostrarlos
-categories.forEach(category => {
-    // Crear un contenedor para la categoría
-    const categoryContainer = document.createElement('div');
-    categoryContainer.classList.add('my-4'); // Margen vertical para separación
+function displayProducts(categoryId) {
+    // Limpiar el contenedor de productos antes de agregar los productos filtrados
+    productContainer.innerHTML = '';
+    
+    const category = categories.find(cat => cat.id === categoryId);
+    if (category) {
+        const categoryContainer = document.createElement('div');
+        categoryContainer.classList.add('my-4');
+        
+        const categoryTitle = document.createElement('h2');
+        categoryTitle.textContent = category.title;
+        categoryTitle.classList.add('text-center');
+        categoryContainer.appendChild(categoryTitle);
+        
+        const productWrapper = document.createElement('div');
+        productWrapper.classList.add('d-flex', 'justify-content-center', 'flex-wrap');
+        
+        category.products.forEach(product => {
+            const card = document.createElement('div');
+            card.classList.add('card', 'm-2', 'text-center');
+            card.style.width = '12rem';
+            card.innerHTML = `
+                <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                <div class="card-body">
+                    <h5 class="card-title">${product.name}</h5>
+                    <p class="card-text">$${product.price}</p>
+                    <button class="btn btn-success" onclick="addToCart({ name: '${product.name}', price: ${product.price} })">Agregar al carrito</button>
+                </div>
+            `;
+            productWrapper.appendChild(card);
+        });
+        
+        categoryContainer.appendChild(productWrapper);
+        productContainer.appendChild(categoryContainer);
+    }
+}
 
-    // Crear un título para la categoría
-    const categoryTitle = document.createElement('h2');
-    categoryTitle.textContent = category.title;
-    categoryTitle.classList.add('text-center'); // Centrar el título
-    categoryContainer.appendChild(categoryTitle);
-
-    // Crear un contenedor para los productos
-    const productWrapper = document.createElement('div');
-    productWrapper.classList.add('d-flex', 'justify-content-center', 'flex-wrap'); // Alinear productos al centro y permitir wrap
-
-    category.products.forEach(product => {
-        const card = document.createElement('div');
-        card.classList.add('card', 'm-2', 'text-center');
-        card.style.width = '12rem'; // Ajusta el ancho según sea necesario
-
-        card.innerHTML = `
-            <img src="${product.image}" class="card-img-top" alt="${product.name}">
-            <div class="card-body">
-                <h5 class="card-title">${product.name}</h5>
-                <p class="card-text">$${product.price}</p>
-                <button class="btn btn-success botonn" onclick="addToCart({ name: '${product.name}', price: ${product.price} })">Agregar al carrito</button>
-            </div>
-        `;
-
-        productWrapper.appendChild(card);
+// Función para manejar el clic en el menú de categorías
+const dropdownItems = document.querySelectorAll('.dropdown-item');
+dropdownItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+        const categoryId = e.target.getAttribute('data-id');
+        displayProducts(categoryId);
     });
-
-    categoryContainer.appendChild(productWrapper); // Agregar el contenedor de productos a la categoría
-    productContainer.appendChild(categoryContainer); // Agregar el contenedor de categoría al contenedor principal
 });
 
-// Mostrar notificación al agregar un producto
-function showNotification() {
-    const notification = document.getElementById('notification');
-    notification.classList.remove('hidden');
-    notification.classList.add('show');
+// Mostrar productos por defecto (al cargar la página)
+displayProducts('Plata');
 
-    // Desaparecer después de 3 segundos
-    setTimeout(() => {
-        notification.classList.remove('show');
-        setTimeout(() => {
-            notification.classList.add('hidden');
-        }, 500); // Sincronizado con el tiempo de la animación
-    }, 3000);
-}
