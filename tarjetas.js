@@ -96,7 +96,7 @@ async function finalizePurchase() {
 const categories = [
     {
         id: 'plata', // ID para Joyas de Plata
-        title: 'Joyas de Plata',
+        title: 'Joyas de Plata 925',
         products: [
             
            /*{ id: 1, name: 'Anillo Feli con Cubic', price: 100, image: './imagenes/Anillo Feli con cubic PLATA.jpg' },*/
