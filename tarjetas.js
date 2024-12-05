@@ -328,11 +328,47 @@ const categories = [
 // Agregar productos al contenedor
 const productContainer = document.getElementById('productContainer');
 
-// Recorrer las categorías y productos para mostrarlos
+// Función para mostrar todos los productos al cargar la página
+function displayAllProducts() {
+    productContainer.innerHTML = ''; // Limpiar el contenedor de productos
+
+    // Recorrer todas las categorías y mostrar sus productos
+    categories.forEach(category => {
+        const categoryContainer = document.createElement('div');
+        categoryContainer.classList.add('my-4');
+        
+        const categoryTitle = document.createElement('h2');
+        categoryTitle.textContent = category.title;
+        categoryTitle.classList.add('text-center');
+        categoryContainer.appendChild(categoryTitle);
+        
+        const productWrapper = document.createElement('div');
+        productWrapper.classList.add('d-flex', 'justify-content-center', 'flex-wrap');
+        
+        category.products.forEach(product => {
+            const card = document.createElement('div');
+            card.classList.add('card', 'm-2', 'text-center');
+            card.style.width = '12rem';
+            card.innerHTML = `
+                <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                <div class="card-body">
+                    <h5 class="card-title">${product.name}</h5>
+                    <p class="card-text">$${product.price}</p>
+                    <button class="btn btn-success" onclick="addToCart({ name: '${product.name}', price: ${product.price} })">Agregar al carrito</button>
+                </div>
+            `;
+            productWrapper.appendChild(card);
+        });
+        
+        categoryContainer.appendChild(productWrapper);
+        productContainer.appendChild(categoryContainer);
+    });
+}
+
+// Función para manejar el clic en el menú de categorías
 function displayProducts(categoryId) {
-    // Limpiar el contenedor de productos antes de agregar los productos filtrados
-    productContainer.innerHTML = '';
-    
+    productContainer.innerHTML = ''; // Limpiar el contenedor de productos
+
     const category = categories.find(cat => cat.id === categoryId);
     if (category) {
         const categoryContainer = document.createElement('div');
@@ -366,16 +402,16 @@ function displayProducts(categoryId) {
     }
 }
 
-// Función para manejar el clic en el menú de categorías
+// Vincular el evento del menú desplegable
 const dropdownItems = document.querySelectorAll('.dropdown-item');
 dropdownItems.forEach(item => {
     item.addEventListener('click', (e) => {
         e.preventDefault();
         const categoryId = e.target.getAttribute('data-id');
-        displayProducts(categoryId);
+        displayProducts(categoryId); // Mostrar los productos de la categoría seleccionada
     });
 });
 
-// Mostrar productos por defecto (al cargar la página)
-displayProducts('Plata');
+// Mostrar todos los productos al cargar la página
+displayAllProducts();
 

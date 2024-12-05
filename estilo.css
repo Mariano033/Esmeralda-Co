@@ -105,9 +105,29 @@ section {
 }
 
 .buscador{
-    background-color: rgb(186, 255, 200);
-    border: solid transparent 1px;
-    border-radius: 8px;
+    border: solid 1px rgb(211, 214, 212);
+    padding: 5px;
+}
+
+.input-group {
+    position: relative;
+}
+
+#searchInput {
+    padding-right: 30px; /* Deja espacio para el ícono dentro del input */
+}
+
+.input-group-append {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Esto asegura que el ícono no interfiera con la interacción del usuario */
+}
+
+.lupa {
+    font-size: 20px; /* Ajusta el tamaño de la lupa */
+    color: #050505; /* Color de la lupa */
 }
 
 .botonfil {
@@ -233,5 +253,17 @@ h2 {
     .d-flex .carrito {
         margin-left: auto;
         margin-right: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .input-group {
+        width: 80%; /* Ajusta el ancho del campo de búsqueda en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 576px) {
+    .input-group {
+        width: 100%; /* En pantallas muy pequeñas, el campo de búsqueda ocupa todo el ancho */
     }
 }
