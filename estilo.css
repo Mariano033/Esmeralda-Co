@@ -93,9 +93,13 @@ section {
 
 
 #productContainer {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; /* Centrar los productos */
+    display: flex;
+    flex-wrap: nowrap; /* Las tarjetas no deben saltar a una nueva fila */
+    overflow-x: auto; /* Habilita el desplazamiento horizontal */
+    gap: 20px; /* Espaciado entre tarjetas */
+    padding: 10px; /* Espaciado interno */
+    scroll-behavior: smooth; /* Desplazamiento suave */
+
 }
 
 #productContainer1 {
@@ -136,8 +140,13 @@ section {
 
 
 .card {
-    max-width: 100%; /* Asegúrate de que las tarjetas no excedan el ancho del contenedor */
-    
+    flex: 0 0 auto; /* Evita que las tarjetas se reduzcan o ajusten automáticamente */
+    width: 250px; /* Ancho fijo para cada tarjeta */
+    background-color: white; /* Fondo blanco para las tarjetas */
+    border: 1px solid #ccc; /* Bordes de las tarjetas */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 15px; /* Espaciado interno */
 }
 
 h2 {
