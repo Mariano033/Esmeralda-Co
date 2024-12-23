@@ -30,7 +30,7 @@ function searchProducts(query) {
             filteredProducts.forEach(product => {
                 const card = document.createElement('div');
                 card.classList.add('card', 'm-2', 'text-center');
-                card.style.width = '12rem';
+                card.style.width = '300px';
 
                 card.innerHTML = `
                     <img src="${product.image}" class="card-img-top" alt="${product.name}">
