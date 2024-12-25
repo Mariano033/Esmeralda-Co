@@ -245,6 +245,35 @@ h2 {
     transform:scale(1.2)
     
 }
+
+/*index2*/
+.sobre-nosotros {
+    background-color: #f8f9fa; /* Fondo claro para diferenciar la sección */
+    padding: 40px 20px; /* Espaciado interno */
+  }
+  
+  .sobre-nosotros h2 {
+    font-size: 2rem;
+    color:grey;
+    
+  }
+  
+  .sobre-nosotros .contenido {
+    max-width: 800px; /* Ancho máximo para mayor legibilidad */
+    margin: 0 auto; /* Centrar contenido */
+    font-size: 1rem;
+    line-height: 1.8; /* Espaciado entre líneas */
+    color: #555; /* Texto más suave */
+    text-align: justify; /* Justifica los párrafos */
+  }
+  
+  .sobre-nosotros p {
+    margin-bottom: 20px; /* Espaciado entre párrafos */
+  }
+  
+  .sobre-nosotros p:last-child {
+    margin-bottom: 0; /* Evita margen extra en el último párrafo */
+  }
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
     .formulario {
