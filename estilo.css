@@ -217,10 +217,10 @@ h2 {
     bottom: 20px;
     right: 20px;
     z-index: 1000;
-    color: rgb(18, 196, 27); ;
-    /*color: rgb(221, 221, 221);*/
+    
+    color: rgb(221, 221, 221);
     font-size: 35px;
-    /*background-color: rgb(18, 196, 27);*/
+    background-color:rgb(21, 173, 28);
     border-radius: 50px;
     width: 55px;
     height: 52px;
