@@ -118,7 +118,7 @@ section {
     width: 250px; /* Ancho fijo para cada tarjeta */
     background-color: white; /* Fondo blanco para las tarjetas */
     border: 1px solid #ccc; /* Bordes de las tarjetas */
-    border-radius: 8px; /* Bordes redondeados */
+    border-radius: 12px; /* Bordes redondeados */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
     padding: 15px; /* Espaciado interno */
 }
@@ -208,11 +208,14 @@ h2 {
     font-weight: 600;
 }
 .card-img-top{
+    height: 200px;
+    border-radius: 15px;
     transition: transform 0.4s ease;
+    
 }
 
 .card-img-top:hover{
-    transform:scale(1.2)
+    transform:scale(1.1)
     
 }
 
