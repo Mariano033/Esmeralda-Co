@@ -191,12 +191,7 @@ h2 {
     text-align: center;
 }
 
-.iwsp {
-    
-    color: rgb(10, 167, 10);
-    width:1em;
-    margin: auto;
-}
+
 
 .numero {
     color: white;
@@ -219,9 +214,9 @@ h2 {
     right: 20px;
     z-index: 1000;
 
-    color: rgb(221, 221, 221);
+    color: rgb(13, 116, 13);
     font-size: 35px;
-    background-color:rgb(21, 173, 28);
+    /*background-color:rgb(21, 173, 28);*/
     border-radius: 50px;
     width: 55px;
     height: 52px;
