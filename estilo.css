@@ -39,33 +39,7 @@ body {
     width: 100%;
 }
 
- /* Estilos para la notificación */
-.notification {
-    position: fixed;
-    top:50%;
-    left: 50%;
-   
-    background-color:rgb(186, 255, 200); /* Color verde similar al botón de agregar */
-    color:black;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-size: 16px;
-    opacity: 0;
-    transform:translate(-50%, -50%);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
-}
-
-.notification.show {
-    opacity: 1;
-    transform: translate(-50%,-50%);
-}
-
-.notification.hidden {
-    opacity: 0;
-    transform:translate(-50% ,-50%);
-} 
+ 
 .imagen1 {
     margin-top: 40px;
     max-width: 100%;
