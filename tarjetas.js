@@ -102,23 +102,23 @@ const categories = [
            /*{ id: 1, name: 'Anillo Feli con Cubic', price: 100, image: './imagenes/Anillo Feli con cubic PLATA.jpg' },*/
             { id:2, name: 'Anillo Hortencia con Cubic T:17', price: 15000, image: 'imagenes/Anillo Hortensia con cubic PLATA.jpg' },
             { id: 3, name: 'Anillo Florencia con Cubic T:16', price:15000, image: './imagenes/Anillo Florencia con cubic PLATA.jpg' },
-            { id: 4, name: 'Anillo Margarita T:18', price: 15000, image: 'imagenes/Anillo Margarita PLATA.jpg' },
-            { id: 5, name: 'Anillo Onda Plata T:16 ', price: 14000, image: 'imagenes/Anillo ondas PLATA 925' },
+            { id: 4, name: 'Anillo Margarita con Cubic T:18', price: 15000, image: 'imagenes/Anillo Margarita PLATA.jpg' },
+            { id: 5, name: 'Anillo Onda T:16 ', price: 14000, image: 'imagenes/Anillo ondas PLATA 925' },
             { id: 6, name: 'Anillo Theo con Cubic T:16', price: 16000, image: 'imagenes/Anillo Theo con cubicPLATA.jpg' },
-            { id: 7, name: 'Anillo Corona con Cubic T:17', price:12000, image: 'imagenes/Anillos corona facetada PLATA 925.jpg' },
+            { id: 7, name: 'Anillo Corona Facetada T:17', price:12000, image: 'imagenes/Anillos corona facetada PLATA 925.jpg' },
 
             { id: 8, name: 'Abridor Comillas', price:7000, image: 'imagenes/Abridor comillas PLATA.jpg' },
             { id: 9, name: 'Abridor Cruz', price:7000, image: 'imagenes/Abridor cruz PLATA.jpg' },
             { id: 10, name: 'Abridor Gota Azul', price:7000, image: 'imagenes/Abridor gota azul PLATA.jpg' },
-            { id: 11, name: 'Abridor Mari Mari', price:7000, image: 'imagenes/Abridor Mari PLATA.jpg' },
-            { id: 12, name: 'Abridor Susi', price:7000, image: 'imagenes/Abridor Susi PLATA.jpg' },
+           /*{ id: 11, name: 'Abridor Mari Mari', price:7000, image: 'imagenes/Abridor Mari PLATA.jpg' }, */
+           /* { id: 12, name: 'Abridor Susi', price:7000, image: 'imagenes/Abridor Susi PLATA.jpg' }, */
            /* { id: 13, name: 'Abridor Triángulo', price: 150, image: 'imagenes/Abridor triángulo PLATA.jpg' },*/
-            { id: 14, name: 'Abridor Cuadrado', price:7000, image: 'imagenes/Abridores cuadrados PLATA.jpg' },
-            { id: 15, name: 'Argolla Corazón', price:15000, image: 'imagenes/Argolla corazón PLATA.jpg' },
+           /* { id: 14, name: 'Abridor Cuadrado', price:7000, image: 'imagenes/Abridores cuadrados PLATA.jpg' }, */
+           /* { id: 15, name: 'Argolla Corazón', price:15000, image: 'imagenes/Argolla corazón PLATA.jpg' }, */
             { id: 16, name: 'Argolla Guadalupe', price:15000, image: 'imagenes/Argolla Guadalupe PLATA.jpg' },
-            { id: 17, name: 'Argolla Infinito', price:12000, image: 'imagenes/Argolla infinito PLATA.jpg' },
-            { id: 18, name: 'Aros Gota', price: 14000, image: 'imagenes/Aros gota PLATA .jpg' },
-            { id:19, name: 'Argolla María', price: 12000, image: 'imagenes/Argolla María PLATA.jpg' },
+           /* { id: 17, name: 'Argolla Infinito', price:12000, image: 'imagenes/Argolla infinito PLATA.jpg' }, */
+           /* { id: 18, name: 'Aros Gota', price: 14000, image: 'imagenes/Aros gota PLATA .jpg' }, */
+           /* { id:19, name: 'Argolla María', price: 12000, image: 'imagenes/Argolla María PLATA.jpg' }, */
             
         ],
     },
@@ -129,56 +129,56 @@ const categories = [
         title: 'Acero Blanco',
         products: [
             
-            { id: 20, name: 'Anillo Corazones marmolado', price:8500, image: 'imagenes/Anillo corazones con cubic AB.jpg' },
+            { id: 20, name: 'Anillo Stella con Cubic', price:10000, image: 'imagenes/Anillo Stella AB.jpg' },
             { id: 21, name: 'Anillo Cleo con Cubic T:17', price:9000, image: 'imagenes/Anillo Cleo con Cubic AB.jpg' },
             { id: 22, name: 'Anillo Alas con Corazón', price:5000, image: 'imagenes/Anillo alas con corazón AB.jpg' },
             { id: 23, name: 'Anillo  Amelia T:17', price:9000, image: 'imagenes/Anillo Amelia AB.jpg' },
-            { id: 24, name: 'Anillo Esmeralda T:15', price:9500, image: 'imagenes/Anillo Esmeralda AB.jpg' },
+           /* { id: 24, name: 'Anillo Esmeralda T:15', price:9500, image: 'imagenes/Anillo Esmeralda AB.jpg' }, */
             { id: 25, name: 'Anillo Estrella y Luna', price:5000, image: 'imagenes/Anillo estrella y luna AB.jpg' },
             { id: 26, name: 'Anillo Flores T:17', price:7000, image: 'imagenes/Anillo flores AB.jpg' },
             { id: 27, name: 'Anillo Gota con Cubic T:14', price:9000, image: 'imagenes/Anillo gota con Cubic AB.jpg' },
             
             { id: 28, name: 'Anillo Hazel T:17', price:8000, image: 'imagenes/Anillo Hazel AB.jpg' },
-            { id: 29, name: 'Anillo Mariposa T:12', price:5000, image: 'imagenes/Anillo mariposa AB.jpg' },
-            { id: 30, name: 'Anillo Hojas T:14', price:5000, image: 'imagenes/Anillo hojas AB.jpg' },
+           /* { id: 29, name: 'Anillo Mariposa T:12', price:5000, image: 'imagenes/Anillo mariposa AB.jpg' }, */
+           /* { id: 30, name: 'Anillo Hojas T:14', price:5000, image: 'imagenes/Anillo hojas AB.jpg' }, */
             { id: 31, name: 'Anillo Olas con Cubic T:14', price:9500, image: 'imagenes/Anillo olas con Cubic AB.jpg' },
 
-            { id: 32, name: 'Anillo Ondas con Corazón', price:5000, image: 'imagenes/Anillo Ondas con corazón AB.jpg' },
+           /* { id: 32, name: 'Anillo Ondas con Corazón', price:5000, image: 'imagenes/Anillo Ondas con corazón AB.jpg' }, */
            /* { id: 33, name: 'Anillo Ondas y Bolitas', price: 150, image: 'imagenes/Anillo ondas y bolitas AB.jpg' },*/
-            { id: 34, name: 'Anillo Serpiente T:17', price:6000, image: 'imagenes/Anillo serpiente detalles AB .jpg' },
+            { id: 34, name: 'Anillo Serpiente con escamas T:17', price:6000, image: 'imagenes/Anillo serpiente detalles AB .jpg' },
             { id: 35, name: 'Anillo Rayo T:14', price: 8000, image: 'imagenes/Anillo Rayo con Cubic AB.jpg' },
 
-            /*{ id: 36, name: 'Anillo Serpiente', price: 150, image: 'imagenes/Anillo serpiente detalles AB .jpg' },*/
-            { id: 37, name: 'Anillo Theo T:15', price:9000, image: 'imagenes/Anillo Theo AB.jpg' },
-            { id: 38, name: 'Anillo Ola T:14', price:5000, image: 'imagenes/Anillos ola AB.jpg' },
+            { id: 36, name: 'Anillo Serpiente', price:5000, image: 'imagenes/Anillos serpiente lisa AB.jpg ' },
+            { id: 37, name: 'Anillo Rita con Cubic T:15', price:9000, image: 'imagenes/Anillo Rita con cubic AB.jpg'},
+           /* { id: 38, name: 'Anillo Ola T:14', price:5000, image: 'imagenes/Anillos ola AB.jpg' }, */
 
-            { id: 39, name: 'Argolla Nat', price:4000, image: 'imagenes/Argolla Nat AB.jpg' },
-            { id: 40, name: 'Argolla Dana con Cubic', price:8000, image: 'imagenes/Argolla Dana con cubic de colores AB.jpg' },
-            { id: 41, name: 'Argolla Estrella con Cubic', price:9000, image: 'imagenes/Argolla estrella con cubic de colores AB.jpg' },
+            { id: 39, name: 'Argolla Nat 1,2cm', price:4000, image: 'imagenes/Argolla Nat AB.jpg' },
+          /*{ id: 40, name: 'Argolla Dana con Cubic', price:8000, image: 'imagenes/Argolla Dana con cubic de colores AB.jpg' },*/
+          /*{ id: 41, name: 'Argolla Estrella con Cubic', price:9000, image: 'imagenes/Argolla estrella con cubic de colores AB.jpg' },*/
             { id: 42, name: 'Argolla Clasicas', price:7000, image: 'imagenes/Argollas clasicas AB.jpg' },
-            { id: 43, name: 'Argolla Dobles con Cubic ', price:10000, image: 'imagenes/Argollas dobles con cubic AB.jpg' },
+          /*{ id: 43, name: 'Argolla Dobles con Cubic ', price:10000, image: 'imagenes/Argollas dobles con cubic AB.jpg' },*/
            /* { id: 44, name: 'Argolla Duquesa con Cubic ', price: , image: 'imagenes/Argollas duquesa con cubic AB.jpg' },
 
-            { id: 45, name: 'Argolla Nat', price: 150, image: 'imagenes/Argollas Nat AB.jpg' },*/
-            { id: 46, name: 'Argolla Stef', price:6000, image: 'imagenes/Argollas Stef AB.jpg' },
-            { id: 47, name: 'Aro Trepador ', price:7000, image: 'imagenes/Aro trepador con cuff de mariposa con cubic AB.jpg' },
-            { id: 48, name: 'Argolla Calada', price: 4500, image: 'imagenes/Argollitas Estella caladas AB.jpg' },
+          /*{ id: 45, name: 'Argolla Nat', price: 150, image: 'imagenes/Argollas Nat AB.jpg' },*/
+          /*{ id: 46, name: 'Argolla Stef', price:6000, image: 'imagenes/Argollas Stef AB.jpg' },*/
+            { id: 47, name: 'Aro Trepador con Mariposa', price:7000, image: 'imagenes/Aro trepador con cuff de mariposa con cubic AB.jpg' },
+          /*{ id: 48, name: 'Argolla Calada', price: 4500, image: 'imagenes/Argollitas Estella caladas AB.jpg' },*/
             { id: 49, name: 'Argolla Estrella ', price:12000, image: 'imagenes/Argollas estrellas AB.jpg' },
-            { id: 50, name: 'Aros Círculo con Cubic ', price:9000, image: 'imagenes/Aros círculo con cubic AB.jpg' },
+          /*{ id: 50, name: 'Aros Círculo con Cubic ', price:9000, image: 'imagenes/Aros círculo con cubic AB.jpg' },*/
 
             { id: 51, name: 'Aros Círculo', price:7500, image: 'imagenes/Aros círculos AB.jpg' },
             { id: 52, name: 'Aros Colgantes de Corazones ', price:7000, image: 'imagenes/Aros colgantes de corazón con cubic AB.jpg' },
             { id: 53, name: 'Aros Colgantes Gotas ', price:8000, image: 'imagenes/Aros colgantes gotas AB.jpg' },
-            { id: 54, name: 'Aros Estrella con Cubic', price:9000, image: 'imagenes/Aros estrellas con cubic AB.jpg' },
-            { id: 55, name: 'Aros Hojas con Cubic', price:8000, image: 'imagenes/Aros hojas con cubic AB.jpg' },
-            { id: 56, name: 'Aros Matilda Con Cubic ', price:13000, image: 'imagenes/Aros Matilda con cubicAB.jpg' },
+          /*{ id: 54, name: 'Aros Estrella con Cubic', price:9000, image: 'imagenes/Aros estrellas con cubic AB.jpg' },*/
+          /*{ id: 55, name: 'Aros Hojas con Cubic', price:8000, image: 'imagenes/Aros hojas con cubic AB.jpg' },*/
+          /*{ id: 56, name: 'Aros Matilda Con Cubic ', price:13000, image: 'imagenes/Aros Matilda con cubicAB.jpg' },*/
 
 
             { id: 57, name: 'Aros Rectángulo con Cubic', price:9000, image: 'imagenes/Aros rectángulo con cubic AB.jpg' },
             { id: 58, name: 'Aros Nudos ', price: 7000, image: 'imagenes/Aros nudos AB.jpg' },
             { id: 59, name: 'Aros Serpiente con Cubic ', price: 8500, image: 'imagenes/Aros serpiente con cubic AB.jpg' },
-            { id: 60, name: 'Aros Sinfín con Cubic', price: 18000, image: 'imagenes/Aros sinfín con cubic AB.jpg' },
-            { id: 61, name: 'Cuff Perú con Cubic', price:6500, image: 'imagenes/Cuff Perú con cubic AB.jpg' },
+          /*{ id: 60, name: 'Aros Sinfín con Cubic', price: 18000, image: 'imagenes/Aros sinfín con cubic AB.jpg' },*/
+          /*{ id: 61, name: 'Cuff Perú con Cubic', price:6500, image: 'imagenes/Cuff Perú con cubic AB.jpg' },*/
             { id: 62, name: 'Cuff  Rectángulos AQ ', price:4000 , image: 'imagenes/Cuff rectángulos (Acero quirúrgico) AQ.jpg' },
             { id: 63, name: 'Cuff Serpiente con Cubic ', price:8000, image: 'imagenes/Cuff serpiente con cubic AB.jpg' },
 
