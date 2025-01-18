@@ -129,7 +129,7 @@ const categories = [
         title: 'Acero Blanco',
         products: [
             
-            { id: 20, name: 'Anillo Corazones con Cubic', price:8500, image: 'imagenes/Anillo corazones con cubic AB.jpg' },
+            { id: 20, name: 'Anillo Corazones marmolado', price:8500, image: 'imagenes/Anillo corazones con cubic AB.jpg' },
             { id: 21, name: 'Anillo Cleo con Cubic T:17', price:9000, image: 'imagenes/Anillo Cleo con Cubic AB.jpg' },
             { id: 22, name: 'Anillo Alas con Corazón', price:5000, image: 'imagenes/Anillo alas con corazón AB.jpg' },
             { id: 23, name: 'Anillo  Amelia T:17', price:9000, image: 'imagenes/Anillo Amelia AB.jpg' },
