@@ -221,7 +221,7 @@ h2 {
 
 /*index2*/
 .sobre-nosotros {
-    background-color: #f8f9fa; /* Fondo claro para diferenciar la sección */
+    background-color: white;     /*fondo claro para diferenciar la sección */
     padding: 40px 20px; /* Espaciado interno */
   }
   
@@ -246,6 +246,13 @@ h2 {
   
   .sobre-nosotros p:last-child {
     margin-bottom: 0; /* Evita margen extra en el último párrafo */
+  }
+
+  iframe{
+    border:0;
+    width:100%;
+    max-width:600px;
+    height: 400px;
   }
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
