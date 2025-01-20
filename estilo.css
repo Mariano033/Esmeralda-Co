@@ -188,7 +188,7 @@ h2 {
     right: 20px;
     z-index: 1000;
 
-    color: rgb(13, 116, 13);
+    color: rgb(53, 201, 53);
     font-size: 35px;
     /*background-color:rgb(21, 173, 28);*/
     border-radius: 50px;
@@ -218,7 +218,9 @@ h2 {
     transform:scale(1.1)
     
 }
-
+#contacto{
+    background-color: black;
+}
 /*index2*/
 .sobre-nosotros {
     background-color: white;     /*fondo claro para diferenciar la sección */

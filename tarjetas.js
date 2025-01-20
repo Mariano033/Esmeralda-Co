@@ -309,6 +309,7 @@ const categories = [
           
         ],
     },
+    /*
     {
         id: 'bolsos', // ID para Bolsos
         title: 'Proximamente vamos a ofrecer Bolsos',
@@ -318,10 +319,11 @@ const categories = [
             /*
             { id: 10, name: 'Bolso de Cuero', price: 200, image: './imagenes/bolso1.jpg' },
             { id: 11, name: 'Bolso de Tela', price: 80, image: './imagenes/bolso2.jpg' },
-             */
+             
         ],
         
     },
+    */
 ];
 
 
