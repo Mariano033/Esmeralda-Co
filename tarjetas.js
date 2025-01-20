@@ -153,10 +153,10 @@ const categories = [
            /* { id: 38, name: 'Anillo Ola T:14', price:5000, image: 'imagenes/Anillos ola AB.jpg' }, */
 
             { id: 39, name: 'Argolla Nat 1,2cm', price:4000, image: 'imagenes/Argolla Nat AB.jpg' },
-          /*{ id: 40, name: 'Argolla Dana con Cubic', price:8000, image: 'imagenes/Argolla Dana con cubic de colores AB.jpg' },*/
-          /*{ id: 41, name: 'Argolla Estrella con Cubic', price:9000, image: 'imagenes/Argolla estrella con cubic de colores AB.jpg' },*/
+            { id: 40, name: 'Argolla Star', price:7000, image: 'imagenes/Argollas Star AB.jpg' },
+            { id: 41, name: 'Aros Hojas', price:10000, image: 'imagenes/Aros de hojas AB.jpg' },
             { id: 42, name: 'Argolla Clasicas', price:7000, image: 'imagenes/Argollas clasicas AB.jpg' },
-          /*{ id: 43, name: 'Argolla Dobles con Cubic ', price:10000, image: 'imagenes/Argollas dobles con cubic AB.jpg' },*/
+            { id: 43, name: 'Aros Feli con Cubic', price:10500, image: 'imagenes/Aros Feli con Cubic.jpg' },
            /* { id: 44, name: 'Argolla Duquesa con Cubic ', price: , image: 'imagenes/Argollas duquesa con cubic AB.jpg' },
 
           /*{ id: 45, name: 'Argolla Nat', price: 150, image: 'imagenes/Argollas Nat AB.jpg' },*/
@@ -177,8 +177,8 @@ const categories = [
             { id: 57, name: 'Aros Rectángulo con Cubic', price:9000, image: 'imagenes/Aros rectángulo con cubic AB.jpg' },
             { id: 58, name: 'Aros Nudos ', price: 7000, image: 'imagenes/Aros nudos AB.jpg' },
             { id: 59, name: 'Aros Serpiente con Cubic ', price: 8500, image: 'imagenes/Aros serpiente con cubic AB.jpg' },
-          /*{ id: 60, name: 'Aros Sinfín con Cubic', price: 18000, image: 'imagenes/Aros sinfín con cubic AB.jpg' },*/
-          /*{ id: 61, name: 'Cuff Perú con Cubic', price:6500, image: 'imagenes/Cuff Perú con cubic AB.jpg' },*/
+            { id: 60, name: 'Cuff Corazón Calado', price: 5000, image: 'imagenes/Aro cuff corazon calado.jpg' },
+            { id: 61, name: 'Cuff Heart', price:5000, image: 'imagenes/Aro cuff Heart.jpg' },
             { id: 62, name: 'Cuff  Rectángulos AQ ', price:4000 , image: 'imagenes/Cuff rectángulos (Acero quirúrgico) AQ.jpg' },
             { id: 63, name: 'Cuff Serpiente con Cubic ', price:8000, image: 'imagenes/Cuff serpiente con cubic AB.jpg' },
 
