@@ -232,25 +232,26 @@ const categories = [
             { id: 99, name: 'Dije Olas con Piedra Roja', price:8000, image: 'imagenes/Dije olas con piedra roja AB (1).jpg' },
             { id: 100, name: 'Dije San Benito', price:7500, image: 'imagenes/Dije San Benito AB.jpg' },
             { id: 101, name: 'Dije Serpiente ', price:6000, image: 'imagenes/Dije serpiente AB.jpg' },
+            { id: 102, name: 'Pulsera Brazalete ajustable Nan', price:15000, image: 'imagenes/Brazalete ajustable Nan AB.jpeg' },
 
 
-
-            
+            { id: 103, name: 'Pulsera Esclava doble tipo gotas ', price:0, image: 'imagenes/Brazalete doble tipo gota AB.jpeg' },
             { id: 104, name: 'Esclava 3.0 x 63 mm ', price:4000, image: 'imagenes/Esclava 3.0 x 63 mm AB (1).jpg' },
             { id: 105, name: 'Esclava 8.0 x 63 mm ', price:8000, image: 'imagenes/Esclava 8.0 x 63 mm AB (1).jpg' },
-           
+            { id: 106, name: 'Pulsera Esclava enlazado', price:0, image: 'imagenes/Brazalete enlazado AB.jpeg' },
             { id: 107, name: 'Esclava 6.0 x 63-67mm ', price: 6000, image: 'imagenes/Esclava 6.0 x 63_67 (1).jpg' },
-
             { id: 108, name: 'Pulsera Box Doble con Corazones y Bolitas ', price: 9000, image: 'imagenes/IMG_20241104_154446955.jpg' },
-            
+
+            { id: 109, name: 'Pulsera Esclava triple ', price:0, image: 'imagenes/Esclava triple AB.jpeg' },
+            { id: 110, name: 'Pulsera Ajustable María ', price:0, image: 'imagenes/Pulsera ajustable AB.jpeg' },
             { id: 111, name: 'Pulsera Astrid', price:6500, image: 'imagenes/Pulsera Astrid AB (1).jpg' },
             { id: 112, name: 'Pulsera Cola de Ratón', price:6500, image: 'imagenes/Pulsera cola de ratón AB.jpg' },
-            
-            
-            { id: 115, name: 'Pulsera con Dije de Fuego ', price:4500, image: 'imagenes/Pulsera con dije de fuego AB (1).jpg' },
-            
+            { id: 113, name: 'Pulsera Ajustable con bolitas en las puntas ', price:0, image: 'imagenes/Pulsera ajustable con bolitas en la punta AB.jpeg' },
+            { id: 114, name: 'Pulsera con corazón negro', price:0, image: 'imagenes/Pulsera corazones negro AB.jpeg' },
+            { id: 115, name: 'Pulsera con Dije de Fuego', price:4500, image: 'imagenes/Pulsera con dije de fuego AB (1).jpg' },
+            { id: 116, name: 'Pulsera doble con brillantes blancos', price:9000, image: 'imagenes/Pulsera doble brillante blancos AB.jpeg' },
             { id: 117, name: 'Pulsera Dina ', price:8000, image: 'imagenes/Pulsera Dina AB.jpg' },
-           
+            { id: 118, name: 'Pulsera cuadruple con brillantes tornasolados ', price:0, image: 'imagenes/Pulseras brillantes colores cuadruples AB.jpeg ' },
             
             
             
@@ -294,8 +295,8 @@ const categories = [
             { id: 130, name: 'Esclava 0.4 x 65 mm ', price: 6500, image: 'imagenes/Esclava 0.4 x 65 mm AD.jpg' },
         
             { id: 131, name: 'Pulsera Cola de Topo ', price: 6000, image: 'imagenes/Pulsera cola de topo AD.jpg' },
-
-           
+            { id: 132, name: 'Pulsera Brazalete con mariposas ', price: 15000, image: 'imagenes/Brazalete con mariposas AD.jpeg' },
+            { id: 133, name: 'Pulsera Brazalete Sara ', price: 15000, image: 'imagenes/Brazalete ajustable Sara AD.jpeg' },
 
 
 
@@ -305,25 +306,25 @@ const categories = [
         id: 'acero-rose', // ID para Acero Rose
         title: 'Acero Rose',
         products: [
-            { id: 132, name: 'Argolla Tere', price: 3500, image: 'imagenes/Argolla Tere AR (2).jpg' },
+            { id: 134, name: 'Argolla Tere', price: 3500, image: 'imagenes/Argolla Tere AR (2).jpg' },
           
         ],
     },
-    /*
+    
     {
         id: 'bolsos', // ID para Bolsos
         title: 'Proximamente vamos a ofrecer Bolsos',
 
-        
+        /*
         products: [
-            /*
+            
             { id: 10, name: 'Bolso de Cuero', price: 200, image: './imagenes/bolso1.jpg' },
             { id: 11, name: 'Bolso de Tela', price: 80, image: './imagenes/bolso2.jpg' },
              
         ],
-        
+        */
     },
-    */
+    
 ];
 
 
