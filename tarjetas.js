@@ -129,28 +129,28 @@ const categories = [
         products: [
             
             { id: 18, name: 'Anillo Serafina regulable', price: 13000, image: 'imagenes/ANILLO SERAFINA.jpeg' }, 
-            { id:19, name: 'Anillo Sofía regulable', price: 13000, image: 'imagenes/anillo sofia.jpeg' }, 
+            { id:19, name: 'Anillo Sofía regulable con Cubic', price: 13000, image: 'imagenes/anillo sofia.jpeg' }, 
             { id: 20, name: 'Anillo Stella con Cubic', price:10000, image: 'imagenes/Anillo Stella AB.jpg' },
-            { id: 21, name: 'Anillo Cleo con Cubic T:17', price:9000, image: 'imagenes/Anillo Cleo con Cubic AB.jpg' },
+           /* { id: 21, name: 'Anillo Cleo con Cubic T:17', price:9000, image: 'imagenes/Anillo Cleo con Cubic AB.jpg' }, */
             { id: 22, name: 'Anillo Bella regulable con cubic', price:15000, image: 'imagenes/anillo bella con cubic (2).jpeg' },
-            { id: 23, name: 'Anillo  Amelia T:17', price:9000, image: 'imagenes/Anillo Amelia AB.jpg' },
+            { id: 23, name: 'Anillo  Amelia T:17', price:10500, image: 'imagenes/Anillo Amelia AB.jpg' },
             { id: 24, name: 'Anillo Amor T:18', price:10500, image: 'imagenes/anillo amor ab.jpeg' }, 
-            { id: 25, name: 'Anillo Estrella y Luna', price:5000, image: 'imagenes/Anillo estrella y luna AB.jpg' },
-            { id: 26, name: 'Anillo Flores T:17', price:7000, image: 'imagenes/Anillo flores AB.jpg' },
-            { id: 27, name: 'Anillo Gota con Cubic T:14', price:9000, image: 'imagenes/Anillo gota con Cubic AB.jpg' },
+            { id: 25, name: 'Anillo Estrella y Luna', price:7500, image: 'imagenes/Anillo estrella y luna AB.jpg' },
+            { id: 26, name: 'Anillo Margaritas con Cubic T:17', price:9000, image: 'imagenes/Anillo flores AB.jpg' },
+            { id: 27, name: 'Anillo Gota con Cubic T:14', price:10500, image: 'imagenes/Anillo gota con Cubic AB.jpg' },
             
-            { id: 28, name: 'Anillo Hazel T:17', price:8000, image: 'imagenes/Anillo Hazel AB.jpg' },
+            { id: 28, name: 'Anillo Hazel T:17', price:9500, image: 'imagenes/Anillo Hazel AB.jpg' },
             { id: 29, name: 'Anillo Julia regulable', price:13000, image: 'imagenes/Anillo Julia.jpeg' }, 
-            { id: 30, name: 'Anillo Lara T:19', price:6500, image: 'imagenes/anillo lara.jpeg' }, 
+            { id: 30, name: 'Anillo Lara T:19', price:8000, image: 'imagenes/anillo lara.jpeg' }, 
             { id: 31, name: 'Anillo Olas con Cubic T:14', price:9500, image: 'imagenes/Anillo olas con Cubic AB.jpg' },
 
             { id: 32, name: 'Anillo Lola regulable', price:13000, image: 'imagenes/anillo lola.jpeg' }, 
             { id: 33, name: 'Anillo Nancy con cubic de colores T:18', price: 16500, image: 'imagenes/aniLLO NANCY CON CUBIC.jpeg' },
-            { id: 34, name: 'Anillo Serpiente con escamas T:17', price:6000, image: 'imagenes/Anillo serpiente detalles AB .jpg' },
-            { id: 35, name: 'Anillo Rayo T:14', price: 8000, image: 'imagenes/Anillo Rayo con Cubic AB.jpg' },
+            { id: 34, name: 'Anillo Serpiente con escamas T:17', price:8000, image: 'imagenes/Anillo serpiente detalles AB .jpg' },
+            { id: 35, name: 'Anillo Rayo T:14', price: 10000, image: 'imagenes/Anillo Rayo con Cubic AB.jpg' },
 
-            { id: 36, name: 'Anillo Serpiente', price:5000, image: 'imagenes/Anillos serpiente lisa AB.jpg ' },
-            { id: 37, name: 'Anillo Rita con Cubic T:15', price:9000, image: 'imagenes/Anillo Rita con cubic AB.jpg'},
+            { id: 36, name: 'Anillo Serpiente', price:7000, image: 'imagenes/Anillos serpiente lisa AB.jpg ' },
+            { id: 37, name: 'Anillo Rita con Cubic T:15', price:10500, image: 'imagenes/Anillo Rita con cubic AB.jpg'},
             { id: 38, name: 'Anillo Nube regulable ', price:13000, image: 'imagenes/Anillo nube regulable.jpeg' }, 
 
             { id: 39, name: 'Argolla con perlas', price:12000, image: 'imagenes/argollas con perlas.jpeg' },
@@ -193,7 +193,7 @@ const categories = [
             { id: 64, name: 'Cadena Figaro 45cm', price:7000, image: 'imagenes/Cadena Fígaro 45cm AB.jpg' },
             { id: 65, name: 'Cadena Rolo 7mm 50cm', price:13000, image: 'imagenes/Cadena rolo 7mm 50cm AB.jpg' },
             { id: 66, name: 'Collar Mariposa ', price:8000, image: 'imagenes/Collar mariposas AB.jpg' },
-            { id: 67, name: 'Collar con Corazón Hueco', price:6000, image: 'imagenes/Collar con corazón hueco AB.jpg' },
+            /*{ id: 67, name: 'Collar con Corazón Hueco', price:6000, image: 'imagenes/Collar con corazón hueco AB.jpg' },*/
             { id: 68, name: 'Collar y Dije Rectangular 60cm', price: 9500, image: 'imagenes/Collar y dije rectangular con cubic 60cm AB.jpg' },
             { id: 69, name: 'Cadena Rolo 50cm  ', price: 6500, image: 'imagenes/IMG_20241104_153002364.jpg' },
            /* { id: 70, name: 'Cadena ', price: 150, image: 'imagenes/IMG_20241017_170252121.jpg' },*/
@@ -203,14 +203,14 @@ const categories = [
            /* { id: 71, name: 'Cadena Rolo 4mm 50cm', price: 150, image: 'imagenes/Cadena rolo 4mm 50cm AB (1).jpg' },*/
             { id: 72, name: 'Cadena Rolo Espiga 50cm', price: 9000, image: 'imagenes/Cadena espiga 50cm AB.jpg' },
            /* { id: 73, name: 'Cadena Rolo Cuadrado 50cm', price: 150, image: 'imagenes/Cadena rolo cuadrado 50cm AB.jpg' },*/
-            { id: 74, name: 'Cadena Palomita 50cm ', price:7000, image: 'imagenes/Cadena palomita 50cm AB.jpg' },
+            /*{ id: 74, name: 'Cadena Palomita 50cm ', price:7000, image: 'imagenes/Cadena palomita 50cm AB.jpg' },*/
             { id: 75, name: 'Cadena Madrid 50cm', price:8500, image: 'imagenes/Cadena Madrid 50cm AB.jpg' },
             { id: 76, name: 'Cadena Salomónica 60cm', price:9500, image: 'imagenes/Cadena Salomónica 60cm AB.jpg' },
 
 
            /* { id: 77, name: 'Collar Singapur 4mm 50cm', price: 150, image: 'imagenes/Cadena Singapur 50cm AB.jpg' },*/
-            { id: 78, name: 'Collar con Dije de Cruz', price:7500, image: 'imagenes/Collar con dije de cruz AB.jpg' },
-            { id: 79, name: 'Cadena Palomita con Bolitias 50cm', price:8000, image: 'imagenes/IMG_20241104_155905534.jpg' },
+            /*{ id: 78, name: 'Collar con Dije de Cruz', price:7500, image: 'imagenes/Collar con dije de cruz AB.jpg' },*/
+            { id: 79, name: 'Cadena Palomita con Bolitias 50cm', price:8000, image: 'imagenes/IMG_20241104_155905534.jpg' }, 
 
 
             { id: 80, name: 'Dije Corazón', price:7000, image: 'imagenes/Dije corazón AB.jpg' },
@@ -240,26 +240,25 @@ const categories = [
             { id: 99, name: 'Dije Olas con Piedra Roja', price:8000, image: 'imagenes/Dije olas con piedra roja AB (1).jpg' },
             { id: 100, name: 'Dije San Benito', price:7500, image: 'imagenes/Dije San Benito AB.jpg' },
             { id: 101, name: 'Dije Serpiente ', price:6000, image: 'imagenes/Dije serpiente AB.jpg' },
+            
             { id: 102, name: 'Pulsera Brazalete ajustable Nan', price:15000, image: 'imagenes/Brazalete ajustable Nan AB.jpeg' },
-
-
-            { id: 103, name: 'Pulsera Esclava doble tipo gotas ', price:0, image: 'imagenes/Brazalete doble tipo gota AB.jpeg' },
+            { id: 103, name: 'Pulsera Esclava doble tipo gotas ', price:14500, image: 'imagenes/Brazalete doble tipo gota AB.jpeg' },
             { id: 104, name: 'Esclava 3.0 x 63 mm ', price:4000, image: 'imagenes/Esclava 3.0 x 63 mm AB (1).jpg' },
             { id: 105, name: 'Esclava 8.0 x 63 mm ', price:8000, image: 'imagenes/Esclava 8.0 x 63 mm AB (1).jpg' },
-            { id: 106, name: 'Pulsera Esclava enlazado', price:0, image: 'imagenes/Brazalete enlazado AB.jpeg' },
-            { id: 107, name: 'Esclava 6.0 x 63-67mm ', price: 6000, image: 'imagenes/Esclava 6.0 x 63_67 (1).jpg' },
-            { id: 108, name: 'Pulsera Box Doble con Corazones y Bolitas ', price: 9000, image: 'imagenes/IMG_20241104_154446955.jpg' },
+            { id: 106, name: 'Pulsera Esclava enlazado', price:12500, image: 'imagenes/Brazalete enlazado AB.jpeg' },
+            /*{ id: 107, name: 'Esclava 6.0 x 63-67mm ', price: 6000, image: 'imagenes/Esclava 6.0 x 63_67 (1).jpg' },*/
+            /*{ id: 108, name: 'Pulsera Box Doble con Corazones y Bolitas ', price: 9000, image: 'imagenes/IMG_20241104_154446955.jpg' },*/
 
-            { id: 109, name: 'Pulsera Esclava triple ', price:0, image: 'imagenes/Esclava triple AB.jpeg' },
-            { id: 110, name: 'Pulsera Ajustable María ', price:0, image: 'imagenes/Pulsera ajustable AB.jpeg' },
-            { id: 111, name: 'Pulsera Astrid', price:6500, image: 'imagenes/Pulsera Astrid AB (1).jpg' },
+            { id: 109, name: 'Pulsera Esclava triple ', price:10500, image: 'imagenes/Esclava triple AB.jpeg' },
+            /*{ id: 110, name: 'Pulsera Ajustable María ', price:0, image: 'imagenes/Pulsera ajustable AB.jpeg' },*/
+            /*{ id: 111, name: 'Pulsera Astrid', price:6500, image: 'imagenes/Pulsera Astrid AB (1).jpg' },*/
             { id: 112, name: 'Pulsera Cola de Ratón', price:6500, image: 'imagenes/Pulsera cola de ratón AB.jpg' },
-            { id: 113, name: 'Pulsera Ajustable con bolitas en las puntas ', price:0, image: 'imagenes/Pulsera ajustable con bolitas en la punta AB.jpeg' },
-            { id: 114, name: 'Pulsera con corazón negro', price:0, image: 'imagenes/Pulsera corazones negro AB.jpeg' },
+            { id: 113, name: 'Pulsera Ajustable con bolitas en las puntas ', price:15000, image: 'imagenes/Pulsera ajustable con bolitas en la punta AB.jpeg' },
+            { id: 114, name: 'Pulsera con corazón negro', price:11500, image: 'imagenes/Pulsera corazones negro AB.jpeg' },
             { id: 115, name: 'Pulsera con Dije de Fuego', price:4500, image: 'imagenes/Pulsera con dije de fuego AB (1).jpg' },
             { id: 116, name: 'Pulsera doble con brillantes blancos', price:9000, image: 'imagenes/Pulsera doble brillante blancos AB.jpeg' },
             { id: 117, name: 'Pulsera Dina ', price:8000, image: 'imagenes/Pulsera Dina AB.jpg' },
-            { id: 118, name: 'Pulsera cuadruple con brillantes tornasolados ', price:0, image: 'imagenes/Pulseras brillantes colores cuadruples AB.jpeg ' },
+            { id: 118, name: 'Pulsera cuadruple con brillantes tornasolados ', price:10500, image: 'imagenes/Pulseras brillantes colores cuadruples AB.jpeg ' },
             
             
             
@@ -286,9 +285,9 @@ const categories = [
         products: [
 
  
-            { id: 123, name: 'Anillo Eslabón Grueso', price:5500, image: 'imagenes/Anillo eslabón grueso AD.jpg' },
+            { id: 123, name: 'Anillo Eslabón Grueso', price:8000, image: 'imagenes/Anillo eslabón grueso AD.jpg' },
         
-            { id: 124, name: 'Anillo Flores ', price:5500, image: 'imagenes/Anillo flores AD.jpg' },
+            { id: 124, name: 'Anillo Flores ', price:8000, image: 'imagenes/Anillo flores AD.jpg' },
 
             { id: 125, name: 'Aros Colgantes', price:5500, image: 'imagenes/Aros colgantes AD.jpg' },
         
@@ -359,7 +358,7 @@ function displayAllProducts() {
         category.products.forEach(product => {
             const card = document.createElement('div');
             card.classList.add('card', 'm-2', 'text-center');
-            card.style.width = '250px';
+            card.style.width = '340px';
     
             card.innerHTML = `
                 <img src="${product.image}" class="card-img-top" alt="${product.name}">
