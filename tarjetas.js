@@ -136,7 +136,7 @@ const categories = [
             { id: 23, name: 'Anillo  Amelia T:17', price:10500, image: 'imagenes/Anillo Amelia AB.jpg' },
             { id: 24, name: 'Anillo Amor T:18', price:10500, image: 'imagenes/anillo amor ab.jpeg' }, 
             { id: 25, name: 'Anillo Estrella y Luna', price:7500, image: 'imagenes/Anillo estrella y luna AB.jpg' },
-            { id: 26, name: 'Anillo Margaritas con Cubic T:17', price:9000, image: 'imagenes/Anillo flores AB.jpg' },
+            /*{ id: 26, name: 'Anillo Margaritas con Cubic T:17', price:9000, image: 'imagenes/Anillo flores AB.jpg' },*/
             { id: 27, name: 'Anillo Gota con Cubic T:14', price:10500, image: 'imagenes/Anillo gota con Cubic AB.jpg' },
             
             { id: 28, name: 'Anillo Hazel T:17', price:9500, image: 'imagenes/Anillo Hazel AB.jpg' },
@@ -145,7 +145,7 @@ const categories = [
             { id: 31, name: 'Anillo Olas con Cubic T:14', price:9500, image: 'imagenes/Anillo olas con Cubic AB.jpg' },
 
             { id: 32, name: 'Anillo Lola regulable', price:13000, image: 'imagenes/anillo lola.jpeg' }, 
-            { id: 33, name: 'Anillo Nancy con cubic de colores T:18', price: 16500, image: 'imagenes/aniLLO NANCY CON CUBIC.jpeg' },
+            /*{ id: 33, name: 'Anillo Nancy con cubic de colores T:18', price: 16500, image: 'imagenes/aniLLO NANCY CON CUBIC.jpeg' },*/
             { id: 34, name: 'Anillo Serpiente con escamas T:17', price:8000, image: 'imagenes/Anillo serpiente detalles AB .jpg' },
             { id: 35, name: 'Anillo Rayo T:14', price: 10000, image: 'imagenes/Anillo Rayo con Cubic AB.jpg' },
 
@@ -183,7 +183,7 @@ const categories = [
             { id: 61, name: 'Cuff Heart', price:6500, image: 'imagenes/Aro cuff Heart.jpg' },
             { id: 62, name: 'Cuff  Rectángulos AQ ', price:6500 , image: 'imagenes/Cuff rectángulos (Acero quirúrgico) AQ.jpg' },
             { id: 63, name: 'Cuff Serpiente con Cubic ', price:9000, image: 'imagenes/Cuff serpiente con cubic AB.jpg' },
-            { id: 135, name: 'Cuff doble con cubic ', price:7000, image: 'imagenes/Aro cuff doble AB.jpeg' },
+            /*{ id: 135, name: 'Cuff doble con cubic ', price:7000, image: 'imagenes/Aro cuff doble AB.jpeg' },*/
             { id: 136, name: 'Cuff Círculos con cubic ', price:7000, image: 'imagenes/cUFF CIRCULOS CON CUBIC.jpeg' },
             { id: 137, name: 'Cuff Estrella Fugaz  con cubic ', price:7000, image: 'imagenes/cuff estrella fugaz.jpeg' },
             { id: 138, name: 'Cuff Infinito encadenado con cubic ', price:8000, image: 'imagenes/Cuff infinito encadenado con cubic.jpeg' },
@@ -193,7 +193,7 @@ const categories = [
             { id: 64, name: 'Cadena Figaro 45cm', price:7000, image: 'imagenes/Cadena Fígaro 45cm AB.jpg' },
             { id: 65, name: 'Cadena Rolo 7mm 50cm', price:13000, image: 'imagenes/Cadena rolo 7mm 50cm AB.jpg' },
             { id: 66, name: 'Collar Mariposa ', price:9000, image: 'imagenes/Collar mariposas AB.jpg' },
-            { id: 67, name: 'Cadena Box con Bolitas 50cm', price:7500, image: 'imagenes/cadena box con bolitas.jpeg' },
+            /*{ id: 67, name: 'Cadena Box con Bolitas 50cm', price:7500, image: 'imagenes/cadena box con bolitas.jpeg' },*/
             { id: 68, name: 'Collar y Dije Rectangular 60cm', price: 10500, image: 'imagenes/Collar y dije rectangular con cubic 60cm AB.jpg' },
             { id: 69, name: 'Cadena mini Rolo 50cm  ', price: 6500, image: 'imagenes/Cadena mini rolo 50cm.jpeg' },
             { id: 70, name: 'Cadena Cola de Ratón con Bolitas 50cm', price: 8000, image: 'imagenes/Caden cola de raton con bolitas 50cm AB 7500.jpeg' },
@@ -216,7 +216,7 @@ const categories = [
             { id: 78, name: 'Collar con Colgante Multicolor Lara', price:10000, image: 'imagenes/collar con colgante multicolor Lara 40cm 10000.jpeg' },
             { id: 79, name: 'Cadena Palomita con Bolitas 50cm', price:9500, image: 'imagenes/Cadena pochoclo con bolitas 50cm 8000.jpeg' }, 
 
-            { id: 146, name: 'Collar con Flor Rosa ', price:10500, image: 'imagenes/Collar con flor rosa 10500AB.jpeg' },
+            /*{ id: 146, name: 'Collar con Flor Rosa ', price:10500, image: 'imagenes/Collar con flor rosa 10500AB.jpeg' },*/
             { id: 147, name: 'Collar con Gotas de Cristales 50cm', price:11000, image: 'imagenes/collar con gotitas de cristales 50cm 11000.jpeg' },
             { id: 148, name: 'Collar con Dije de Gota', price:13000, image: 'imagenes/Collar gota AB 13000.jpeg' },
             { id: 149, name: 'Collar Susanito con Corazón Pequeño', price:12500, image: 'imagenes/collar susanito corazon chico 12500.jpeg' },
@@ -265,7 +265,7 @@ const categories = [
             { id: 105, name: 'Esclava 8.0 x 63 mm ', price:9000, image: 'imagenes/Esclava 8.0 x 63 mm AB (1).jpg' },
             { id: 106, name: 'Pulsera Esclava enlazado', price:12500, image: 'imagenes/Brazalete enlazado AB.jpeg' },
             { id: 107, name: 'Esclava 6.0 x 63mm ', price: 7000, image: 'imagenes/Esclava 6.0 x 63_67 (1).jpg' },
-            { id: 108, name: 'Pulsera Burgaria con Cubic ', price: 9000, image: 'imagenes/pulsera con dije negro y cubic 9000.jpeg' },
+           /* { id: 108, name: 'Pulsera Burgaria con Cubic ', price: 9000, image: 'imagenes/pulsera con dije negro y cubic 9000.jpeg' },*/
 
             { id: 109, name: 'Pulsera Esclava triple ', price:10500, image: 'imagenes/Esclava triple AB.jpeg' },
             { id: 110, name: 'Pulsera Strass con Corazón Engarzado ', price:10000, image: 'imagenes/Pulsera strass corazon engarzado.jpeg' },
